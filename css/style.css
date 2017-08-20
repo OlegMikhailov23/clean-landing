@@ -1,30 +1,8 @@
-@font-face {
-    font-family: 'MuseoCyrl-300';
-    src: url(../fonts/MuseoCyrl-300.eot);
-    src: url(../fonts/MuseoCyrl-300.woff) format("woff"), url(../fonts/MuseoCyrl-300.ttf) format("truetype"), url(../fonts/MuseoCyrl-300.eot?#iefix) format("embedded-opentype");
-    font-weight: 400;
-    font-style: normal
-}
 
-@font-face {
-    font-family: 'MuseoCyrl-900';
-    src: url(../fonts/MuseoCyrl-900.eot);
-    src: url(../fonts/MuseoCyrl-900.ttf) format("truetype"), url(../fonts/MuseoCyrl-900.eot?#iefix) format("embedded-opentype");
-    font-weight: 400;
-    font-style: normal
-}
-
-@font-face {
-    font-family: "Conv_exljbris - Museo Cyrl 300";
-    src: url('fonts/exljbris - Museo Cyrl 300.eot');
-    src: local("вШЇ"), url('fonts/exljbris - Museo Cyrl 300.woff') format("woff"), url('fonts/exljbris - Museo Cyrl 300.ttf') format("truetype"), url('fonts/exljbris - Museo Cyrl 300.svg') format("svg");
-    font-weight: 400;
-    font-style: normal
-}
 body{
 overflow-x:hidden;
- font-family: "Open Sans", sans-serif;
-    font-weight: 400;
+font-family: "PT Sans", "Arial", sans-serif;
+font-weight: 400;
 }
 h1,
 h2,
@@ -32,7 +10,7 @@ h3,
 h4,
 h5,
 h6{
-    font-family: 'MuseoCyrl-900';
+    font-family: "Russo One", "Arial", sans-serif;
 }
 a{
     text-decoration: none;
@@ -161,7 +139,6 @@ background-position-x: left;
 .FormaRight p{
     text-align: center;
     font-size: 1em;
-    font-family: "Open Sans", sans-serif;
     margin-top: 15px;
 }
 .blok2{
@@ -350,7 +327,6 @@ main{
     margin-top: 40px;
 }
 .voprosi span{
-    font-family: 'MuseoCyrl-900';
     font-size: 1.7em;
     font-weight: 600;
     color:#fff;
@@ -619,13 +595,13 @@ text-decoration: none;
     cursor: pointer;
     padding: 10px 13px;
     color: #fff;
-    background: #F5590A;
+    background: #e93746;
     margin-top: 30px;
     box-shadow: 0px 0px 7px 0px #000000;
     transition: 0.6s;
 }
 .footer_right span:hover{
-    background: #f5702d;
+    background: #f0626e;
     box-shadow: 0px 0px 2px 0px #000000;
     transition: 0.6s;
 }
