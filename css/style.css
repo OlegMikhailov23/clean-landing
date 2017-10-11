@@ -140,6 +140,45 @@ nav ul {
     height: 750px;
 }
 
+.social-link {
+    position: absolute;
+    width: 200px;
+    padding: 5px;
+    top: 600px;
+    right: 60px;
+    box-shadow: 0px 0px 16px 0px #000000;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.social-link h2 {
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.social-link-vk {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 5px;
+    font-size: 0;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: #4a709b;
+    background-image: url("../img/vk-social-network-logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+}
+
+.social-link-vk:hover {
+  background-color: #f0626e;
+  border-color: #4a709b;
+  transition: 0.3s;
+}
+
 .FormaRight {
     position: relative;
     top: 200px;
