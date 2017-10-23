@@ -1,6 +1,6 @@
 <?
 if((isset($_POST['name'])&&$_POST['name']!="")&&(isset($_POST['email'])&&$_POST['email']!="")){ //Проверка отправилось ли наше поля name и не пустые ли они
-        $to = 'dkfolkin@gmail.com,info@cleanprofit.ru'; //Почта получателя, через запятую можно указать сколько угодно адресов
+        $to = 'dkfolkin@gmail.com,info@cleanprofit.ru,kasatkin.igor.87@mail.ru'; //Почта получателя, через запятую можно указать сколько угодно адресов
         $subject = 'Обратный звонок'; //Загаловок сообщения
         $message = '
                 <html>
