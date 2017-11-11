@@ -34,13 +34,13 @@ a {
 }
 
 .Menu {
-    background: url("../img/6143.jpg");
+    background: linear-gradient(to bottom, #049aff, #86c5ff);
     position: fixed;
     width: 100%;
     height: auto;
-    padding: 14px 0px;
+    padding: 10px 0px;
     z-index: 99;
-    box-shadow: 1px 0px 10px 1px #cccccc;
+    box-shadow: 1px 0px 15px 1px #000000;
 }
 
 .logo img {
@@ -87,9 +87,14 @@ nav ul {
 
 .nav a:hover {
     color: #ffffff;
-    background-color: #049aff;
+    background-color: #e93746;
     border-radius: 5px;
-    box-shadow: 1px 0px 5px 5px #cccccc;
+    border: 2px solid #ffffff;
+}
+
+.nav a:active {
+  background-color: #f0626e;
+  box-shadow: inset 0 2px 2px 0 rgba( 0, 0, 0, 0.3);
 }
 
 .tel {
@@ -98,20 +103,14 @@ nav ul {
 
 .tel a {
     display: block;
-    border-radius: 5px;
+    border: 2px solid #ffffff;
+    margin-right: 5px;
+    margin-left: 5px;
     color: #ffffff;
     text-decoration: none;
     font-size: 1.4em;
-    background: linear-gradient(to bottom, #049aff, #00b0ff);
+    background: #e93746;
     margin-top: 5px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.tel a:hover {
-    transform: scale(1.2);
-    transition: 0.2s;
-    box-shadow: 1px 0px 5px 5px #cccccc;
 }
 
 .tel a:active {
@@ -126,18 +125,20 @@ nav ul {
 
 .zakaz_zvonok a {
     text-decoration: none;
-    color: #f0626e;
-    padding: 8px 11px;
-    border: 2px solid #f0626e;
+    color: #000000;
+    padding: 5px 11px;
+    border: 2px solid #000000;
     font-size: 1.2em;
     transition: 0.3s;
     border-radius: 5px;
+    
 }
 
 .zakaz_zvonok a:hover {
     background: #f0626e;
     color: #fff;
     transition: 0.3s;
+    border: 2px solid #ffffff;
 }
 
 #footer {
@@ -179,11 +180,11 @@ nav ul {
     top: 550px;
     right: 60px;
     box-shadow: 0px 0px 16px 0px #000000;
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(207, 207, 207, 0.9);
 }
 
 .social-link h2 {
-    color: #ffffff;
+    color: #000000;
     font-size: 18px;
     text-align: center;
     font-weight: 400;
@@ -216,8 +217,8 @@ nav ul {
     top: 120px;
     width: 60%;
     margin-left: 30%;
-    background: rgba(0, 0, 0, 0.75);
-    color: #fff;
+    background: rgba(207,207,207, 0.9);
+    color: #000000;
     padding: 50px 15px;
     box-shadow: 0px 0px 16px 0px #000000;
 }
@@ -225,6 +226,11 @@ nav ul {
 .FormaRight h5 {
     text-align: center;
     font-size: 1.7em;
+}
+
+.FormaRight strong {
+    font-size: 19px;
+    color: #f0626e;
 }
 
 .FormaRight p {
@@ -244,6 +250,11 @@ nav ul {
     margin-top: 8px;
     padding: 9px;
     color: #111;
+    border-radius: 5px;
+}
+
+.FormaRight input:focus {
+    border: 1px solid #000000;
 }
 
 .FormaRight #btn_submit {
@@ -256,8 +267,12 @@ nav ul {
 }
 
 .FormaRight #btn_submit:hover {
-    background: #e94a57;
+    background: #ff7c7c;
     transition: 0.2s;
+}
+
+.FormaRight #btn_submit:active {
+    box-shadow: inset 0 2px 2px 0 rgba( 0, 0, 0, 0.3);
 }
 
 .temno {
