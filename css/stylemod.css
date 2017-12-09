@@ -253,10 +253,6 @@ nav ul {
     border-radius: 5px;
 }
 
-.FormaRight input:focus {
-    border: 1px solid #000000;
-}
-
 .FormaRight #btn_submit {
     background: #e93746;
     border: none;
