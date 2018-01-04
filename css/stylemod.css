@@ -43,6 +43,10 @@ a {
     box-shadow: 1px 0px 15px 1px #000000;
 }
 
+.visually-hidden {
+    display: none;
+}
+
 .logo img {
     width: 40%;
     float: left;
