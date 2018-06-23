@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/otziv.css">
     <!--Стили-->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mini-style.css">
     <link rel="stylesheet" href="css/rwdgrid.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Russo+One&amp;subset=cyrillic" rel="stylesheet">
@@ -34,6 +34,16 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108627099-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108627099-1');
+</script>
+
 </head>
 
 <body>
