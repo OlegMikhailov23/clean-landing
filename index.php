@@ -12,11 +12,12 @@
     <title>Clean Profit | Химчистка | Чистка мебели, дивана, матраса, ковров в Санкт-Петербург | Спб</title>
     <!--Мета теги-->
     <meta name="description" content="Клининговая компания Clean Profit специализируется на химчистке мягкой мебели: диванов, кресел, стульев, а также ковров и является лидером на рынке клининговых услуг в г.Санкт-Петербург!">
+    <meta name="keywords" content="химчитска ковров спб, химчистка дивана спб, чистка ковров, химчистка ковролина, химчискта мебели, читска мебели, химчискта мебели, химчистка матраса, уборка квартиры, генеральная уборка" />
     <meta name="viewport" content="width=device-width">
     <meta name="yandex-verification" content="0aa13b7b52b7a2d0" />
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <!--Скрипты-->
-    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery211.js"></script>
     <script src="js/script_hd.js"></script>
     <script src="js/modernizr.js"></script>
     <!--Фтер-->
@@ -83,7 +84,7 @@
     <main>
         <div class="container">
             <header>
-                <h1 class="visually-hidden">Клининговая компания Clean Profit - химчистка, чистка, диванов, матрасов, ковров на дому в Спб.</h1>
+                <h1 class="visually-hidden">Клининговая компания Clean Profit - это уборка квартир, мойка окон, химчистка, чистка, диванов, матрасов, ковров на дому и с вывозом в Спб.</h1>
                 <div class="grid-12 Menu">
                     <div class="grid-5 logo">
                         <a href="#glavnaya"><img src="img/transplogo.png" alt="Логотип Clean Profit" /></a>
@@ -110,7 +111,7 @@
                     <br>
                 </div>
                 <div class="speech-container">
-                   <h2 сlass="speech">Химчистка мягкой мебели<br> и ковров</h2>
+                   <h2 сlass="speech">Уборка. Химчистка мебели<br> и ковров</h2>
                   <span class="under-speech">Цена, качество и скорость!</span>
                    </div>
                 <div class="grid-6">
@@ -146,14 +147,14 @@
                         <img src="img/alltypes.jpg" alt="Удаляем все типы пятен" />
                     </div>
                     <div class="grid-3">
+                        <p>Профессиональное импортное
+                            <br> оборудование</p>
+                        <img src="img/Carpet-machine.jpg" alt="Используем импортное оборудование" />
+                    </div>
+                    <div class="grid-3">
                         <p>Скидка <strong>30%</strong>
                             <br> на второй предмет</p>
                         <img src="img/discount.jpg" alt="Скидка 30% на второй предмет" />
-                    </div>
-                    <div class="grid-3">
-                        <p>Профессиональное импортное
-                            <br> оборудование</p>
-                        <img src="img/equipment.jpg" alt="Используем импортное оборудование" />
                     </div>
                     <div class="grid-3">
                         <p>Выезд в удобное
@@ -198,9 +199,9 @@
                                 <img src="img/before4.jpg" alt="Матрас после химчистки" />
                                 <span class="cd-image-label" data-type="modified">До</span>
                             </div>
-                            <div class="cImg-handle2">
+                            
                                 <span class="cd-handle"></span>
-                            </div>
+                            
                         </figure>
                     </div>
                     <div class="grid-6">
@@ -211,22 +212,22 @@
                                 <img src="img/before2.jpg" alt="Диван после химчистки" />
                                 <span class="cd-image-label" data-type="modified">До</span>
                             </div>
-                            <div class="cImg-handle2">
+                            
                                 <span class="cd-handle"></span>
-                            </div>
+                            
                         </figure>
                     </div>
                     <div class="grid-6">
                         <figure class="cd-image-container">
-                            <img src="img/after3.jpg" alt="Стул до химчистки" />
+                            <img src="img/carpet-after.jpg" alt="Стул до химчистки" />
                             <span class="cd-image-label" data-type="original">После</span>
                             <div class="cd-resize-img">
-                                <img src="img/before3.jpg" alt="Стул после химчистки" />
+                                <img src="img/carpet-before.jpg" alt="Стул после химчистки" />
                                 <span class="cd-image-label" data-type="modified">До</span>
                             </div>
-                            <div class="cImg-handle2">
+                            
                                 <span class="cd-handle"></span>
-                            </div>
+                            
                         </figure>
                     </div>
                     <div class="grid-6">
@@ -237,9 +238,9 @@
                                 <img src="img/before1.jpg" alt="Диван после химчистки" />
                                 <span class="cd-image-label" data-type="modified">До</span>
                             </div>
-                            <div class="cImg-handle2">
+                            
                                 <span class="cd-handle"></span>
-                            </div>
+                            
                         </figure>
                     </div>
                 </div>
@@ -264,20 +265,20 @@
                     </div>
                     <div class="grid-3">
                         <div class="usluga">
-                            <img src="img/mattres-price.jpg" alt="Химчистка матраса за место">
+                            <img src="img/machin-wash.png" alt="Химчистка ковров в цеху">
                             <div class="usluga_opis">
-                                <p>Химчистка матраса</p>
-                                <p class="cena">от 490₽ место</p>
+                                <p>Химчистка ковров в цеху с вывозом</p>
+                                <p class="cena">от 200₽ за метр</p>
                                 <p><span>Заказать</span></p>
                             </div>
                         </div>
                     </div>
                     <div class="grid-3">
                         <div class="usluga">
-                            <img src="img/machin-wash.png" alt="Химчистка ковров в цеху">
+                            <img src="img/general-cleaning.jpg" alt="Уборка квартир">
                             <div class="usluga_opis">
-                                <p>Химчистка ковров в цеху с вывозом</p>
-                                <p class="cena">от 280₽ за метр</p>
+                                <p>Уборка квартир</p>
+                                <p class="cena">от 1900₽</p>
                                 <p><span>Заказать</span></p>
                             </div>
                         </div>
@@ -293,11 +294,11 @@
                         </div>
                     </div>
                     <div class="grid-3">
-                        <div class="usluga">
-                            <img src="img/chair-price.jpg" alt="Химчистка стула">
+                    	<div class="usluga">
+                            <img src="img/mattres-price.jpg" alt="Химчистка матраса за место">
                             <div class="usluga_opis">
-                                <p>Химчистка стула</p>
-                                <p class="cena">150₽ за шт.</p>
+                                <p>Химчистка матраса</p>
+                                <p class="cena">от 490₽ место</p>
                                 <p><span>Заказать</span></p>
                             </div>
                         </div>
@@ -314,10 +315,10 @@
                     </div>
                     <div class="grid-3">
                         <div class="usluga">
-                            <img src="img/puf-price.jpg" alt="Химчистка мягкого пуфа">
+                            <img src="img/chair-price.jpg" alt="Химчистка стула">
                             <div class="usluga_opis">
-                                <p>Химчистка мягкого пуфа</p>
-                                <p class="cena">300₽ шт.</p>
+                                <p>Химчистка стула</p>
+                                <p class="cena">150₽ за шт.</p>
                                 <p><span>Заказать</span></p>
                             </div>
                         </div>
@@ -335,7 +336,7 @@
                 </div>
                 <div class="grid-12">
                     <p class="zakaz_xim">
-                        <a target="_blank" href="cleanprofitprice01092017.pdf">Скачать полный прайс лист</a>
+                        <a target="_blank" href="price-4.11.18.pdf" title="Скачать полный прайс-лист">Скачать полный прайс лист</a>
                     </p>
                 </div>
             </div>
@@ -357,6 +358,12 @@
                     <p>Компания Chemical Specialties Manufacturing Corporation является международным членом ассоциации RPM и была основана в 1968 году.Chemspec является лидером мирового клинингового рынка по производству средств для очистки ковровых покрытий и текстиля. Перед вводом в продажу, все средства компании Chemspec проходят тестирования в лабораториях и получают независимую оценку экспертов, разбирающихся в вопросах клининга. Clean Profit выбирает для своих клиентов лучшие средства и это Chemspec!
                     </p>
                 </div>
+                <div class="grid-6 carpet-machine">
+                    <h6>Catinet Total</h6>
+                    <img src="img/carpet-machine-depict.png" width="600" height="600" alt="Chemspec" />
+                    <p>Компания Clean Profit использует испанское оборудование Catinet для чистки и химчистки ковров, которое сочетает в себе несколько циклов: удаление пыли и грязи, шампунирование, ополаскивание, и сушку. В течении первого цикла происходит удаление <strong>100% пыли</strong>, далее ковер шампунируется шестью специальными щетками, после этого идет процесс ополаскивания, при котором удаляются шампунь и остатки грязи, далее происходит отжим и расчесываие ковра. Результатом работы этой машины является абсолютно чистый ковер без пыли, грязи и микроорганизмов.
+                    </p>
+                </div>
                 <div class="grid-12">
                     <p class="zakaz_xim">
                         <span>Заказать химчистку</span>
@@ -364,7 +371,7 @@
                 </div>
             </div>
             <div class="grid-12 blok8">
-              <div class="price-online__title"><h3 class="price-online__title-text">Оценка по фото</h3></div>
+              <div class="price-online__title"><h3 class="price-online__title-text">Оценка стоимости по фото</h3></div>
                <div class="price-online__flex-container">
                <a class="price-online__btn  whatsup-btn" href="https://api.whatsapp.com/send?phone=79110870304" title="Оценка стоимости по фото WhatsUP" target="_blank">WhatsUP</a>
                <a class="price-online__btn  viber-btn" title="Оценка стоимости по фото Viber" href="viber://chat?number=89110870304" target="_blank">Viber</a>
@@ -527,6 +534,7 @@
     <script src="js/maindoposle.js"></script>
     <script src="js/jquery.flexslider-min.js"></script>
     <script src="js/main1.js"></script>
+    <script src="js/jquery.mobile.custom.min.js"></script>
     <!-- RedConnect -->
     <script id="rhlpscrtg" type="text/javascript" charset="utf-8" async="async" src="https://web.redhelper.ru/service/main.js?c=dkfolkin"></script>
     <div style="display: none"><a class="rc-copyright" href="http://redconnect.ru">Обратный звонок RedConnect</a></div>
