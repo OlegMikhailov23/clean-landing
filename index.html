@@ -30,6 +30,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/rwdgrid.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <!--Карусель-->
+    <link rel="stylesheet" href="libs/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <!--Карусель-->
     <link href="https://fonts.googleapis.com/css?family=Russo+One&amp;subset=cyrillic" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -344,14 +348,63 @@
                 <h5>КАК МЫ ДЕЛАЕМ<span class="zel"> ХИМЧИСТКУ</span></h5>
                 <img src="img/blok6.jpg" alt="Химчистка ковра" />
             </div>
+            <div class="grid-12 our-workers">
+               <h4>НАШЫ<span class="zel"> РАБОТНИКИ</span></h5>
+                <div class="owl-carousel owl-theme">
+									<div class="item our-workers__unit-container">
+											<div class="our-workers__unit-name">
+													<span>Игорь</span>
+											</div>
+											<div class="our-workers__unit-photo">
+													<img src="img/man.svg" alt="Фото работника">
+											</div>
+											<div class="our-workers__unit-info">
+													<span>Специализация: Химчистка</span>
+													<span>Опыт: 4 года</span>
+													<span>Оценка клиентов 👍: 4,8</span>
+											</div>
+									</div>
+									<div class="item our-workers__unit-container">
+											<div class="our-workers__unit-name">
+													<span>Игорь</span>
+											</div>
+											<div class="our-workers__unit-photo">
+													<img src="img/man.svg" alt="Фото работника" width="300" height="300">
+											</div>
+											<div class="our-workers__unit-info">
+													<span>Специализация: Химчистка</span>
+													<span>Опыт: 4 года</span>
+													<span>Оценка клиентов 👍: 4,8</span>
+											</div>
+									</div>
+									<div class="item our-workers__unit-container">
+											<div class="our-workers__unit-name">
+													<span>Игорь</span>
+											</div>
+											<div class="our-workers__unit-photo">
+													<img src="img/man.svg" alt="Фото работника">
+											</div>
+											<div class="our-workers__unit-info">
+													<span>Специализация: Химчистка</span>
+													<span>Опыт: 4 года</span>
+													<span>Оценка клиентов 👍: 4,8</span>
+											</div>
+									</div>
+								</div>
+           			<div class="grid-12">
+                    <p class="zakaz_xim">
+                        <span>Заказать химчистку</span>
+                    </p>
+                </div>
+            </div>
             <div class="grid-12 blok7">
                 <h5>НАШЕ<span class="zel"> ОБОРУДОВАНИЕ</span></h5>
-                <div class="grid-6">
+                <div class="grid-6">						
                     <h6>Santoemma Sabrina-Maxi</h6>
                     <img src="img/7_1.png" alt="Santoemma Sabrina-Maxi" />
                     <p>Ковровый экстрактор Santoemma Sabrina Maxi предназначен для профессиональной чистки ковровых покрытий, мебельной обивки, салонов автомобилей, полов и матрасов. Благодаря увеличенному давлению подачи чистящего раствора (9 бар), а также непревзойденной силе всасывания (мощность турбины 1200Wt) аппарат обеспечивает безукориизненную чистоту и эффективность уборки за короткое время.
                     </p>
-                </div>
+                </div>				
                 <div class="grid-6">
                     <h6>Средства «Chemspec»</h6>
                     <img src="img/chemspec.png" width="600" height="600" alt="Chemspec" />
@@ -528,7 +581,9 @@
         </div>
     </footer>
     <!-- scripts -->
+    <script src="libs/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
     <script src="js/script_ft.js"></script>
+    <script src="js/owl.js"></script>
     <script src="js/footer-reveal.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/maindoposle.js"></script>

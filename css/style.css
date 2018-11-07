@@ -492,12 +492,86 @@ main {
     margin-top: 60px
 }
 
+/*Стили блока "наши работники*/
+
+.our-workers__unit-container {
+		display: flex;
+		flex-direction: column;
+		margin: 5%;
+		border: 1px solid rgb(217, 217, 217);
+		border-radius: 5%;
+		overflow: hidden;
+		box-shadow: 0 0 3px 1px #cccccc;
+}
+
+.our-workers {
+		margin-top: 10%;
+		margin-bottom: 5%;
+}
+
+.our-workers h4 {
+		display: block;
+    font-weight: bold;
+		font-size: 2em;
+		margin-bottom: 5%;
+		text-align: center;
+}
+
+.our-workers__unit-name {
+		border-bottom: 2px solid rgb(217, 217, 217);
+		background-color: #fbfbfb;
+		padding-top: 3%;
+		padding-bottom: 3%;
+		text-align: center;
+		overflow: hidden;
+}
+
+.our-workers__unit-name span {
+		font-family: inherit;
+		font-weight: 400;
+		font-size: 1.5em;
+		text-transform: uppercase;
+		text-align: left;
+}
+
+.our-workers__unit-photo {
+		padding: 2%;
+		height: 250px;
+		width: 100%; 
+}
+
+.our-workers__unit-photo img {
+		height: 100%
+}
+
+.our-workers__unit-info {
+		padding-top: 3%;
+		padding-left: 10%;
+		padding-right: 10%;
+		padding-bottom: 3%;
+		display: flex;
+		flex-direction: column;
+		border-top: 2px solid rgb(217, 217, 217);
+		background: linear-gradient(to bottom, #049aff, #86c5ff);
+}
+
+.our-workers__unit-info span {
+		padding-left: 3%;
+		padding-top: 2%;
+		padding-bottom: 2%;
+		color: #ffffff;
+		font-family: inherit;
+		font-size: 1.2em;
+}
+
+/*Стили блока "наши работники*/
+
 .blok7 h5 {
     margin-top: 30px;
     width: 60%;
     margin-left: 20%;
     background: #fff;
-    box-shadow: 0 0 3px 0 #000
+    box-shadow: 0 0 3px 0 #000;
 }
 
 .blok8 {
@@ -919,7 +993,23 @@ main {
 .FormFT,
 .temnoFT {
     position: fixed;
-    display: none
+    display: none;
+}
+
+.FormFT {
+		animation: bounce 0.3s;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 .СозданиеСайтов img:hover {
@@ -1011,7 +1101,8 @@ main {
 .messagesFT {
     color: #fff;
     display: none;
-    font-size: 1.2em
+    font-size: 1.2em;
+		animation: bounce 0.3s;
 }
 
 .FormFT a {
@@ -1074,7 +1165,8 @@ main {
     background: #049aff;
     color: #fff;
     text-align: center;
-    margin-top: -20px
+    margin-top: -20px;
+		min-height: 300px;
 }
 
 .usluga_opis p {
