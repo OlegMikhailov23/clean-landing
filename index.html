@@ -40,28 +40,28 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108627099-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108627099-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-108627099-1');
-</script>
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
+    gtag('config', 'UA-108627099-1');
+    </script>
 </head>
 
 <body>
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
-    var yaParams = {ip_adress: "<? echo $_SERVER['REMOTE_ADDR'];?>"};  
+    var yaParams = { ip_adress: "<? echo $_SERVER['REMOTE_ADDR'];?>" };
     (function(d, w, c) {
         (w[c] = w[c] || []).push(function() {
             try {
                 w.yaCounter45690405 = new Ya.Metrika({
                     id: 45690405,
-                    params:window.yaParams,
-                    webvisor:true,
+                    params: window.yaParams,
+                    webvisor: true,
                     clickmap: true,
                     trackLinks: true,
                     accurateTrackBounce: true
@@ -87,6 +87,27 @@
     <!-- /Yandex.Metrika counter -->
     <main>
         <div class="container">
+            <header class="page-header grid-12">
+                <div class="page-header__logo">
+                    <a href="#" class="page-header__logo-link"><img src="img/transplogo.png" alt="Логотип Clean Profit"/></a>
+                    <span class="page-header__phone"><a href="tel:+7(812)9286362"> 8(812)928-63-62</a></span>
+                </div>
+                <nav class="main-nav grid-12 main-nav--closed main-nav--nojs">
+                    <button class="main-nav__toggle" type="button">Открыть меню</button>
+                    <div class="main-nav__wrapper">
+                        <ul class="main-nav__items">
+                            <li class="main-nav__item  main-nav__item-active"><a>Главная</a></li>
+                            <li class="main-nav__item"><a href="#">Новости</a></li>
+                            <li class="main-nav__item"><a href="#">Статьи</a></li>
+                            <li class="main-nav__item"><a href="#">Обьект</a></li>
+                            <li class="main-nav__item"><a href="#">Доставка</a></li>
+                            <li class="main-nav__item"><a href="#">Отзывы</a></li>
+                            <li class="main-nav__item"><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <!--
             <header>
                 <h1 class="visually-hidden">Клининговая компания Clean Profit - это уборка квартир, мойка окон, химчистка, чистка, диванов, матрасов, ковров на дому и с вывозом в Спб.</h1>
                 <div class="grid-12 Menu">
@@ -109,15 +130,15 @@
                         <p class="zakaz_zvonok"><a href="#">Заказать звонок</a></p>
                     </div>
                 </div>
-            </header>
+            </header>-->
             <div class="grid-12 blok1" id="glavnaya">
                 <div class="grid-6">
                     <br>
                 </div>
                 <div class="speech-container">
-                   <h2 сlass="speech">Уборка. Химчистка мебели<br> и ковров</h2>
-                  <span class="under-speech">Цена, качество и скорость!</span>
-                   </div>
+                    <h2 сlass="speech">Уборка. Химчистка мебели<br> и ковров</h2>
+                    <span class="under-speech">Цена, качество и скорость!</span>
+                </div>
                 <div class="grid-6">
                     <div class="social-link">
                         <h2>Подпишись на нашу группу и получи скидку 10% на весь заказ!</h2>
@@ -126,13 +147,13 @@
                     <div class="FormaRight">
                         <h5>ОНЛАЙН ЗАЯВКА</h5>
                         <p>ЗАПОЛНИТЕ ФОРМУ И ПОЛУЧИТЕ СКИДКУ <strong>30%</strong> НА ВТОРОЙ ПРЕДМЕТ</p>
-                        <br/>
+                        <br />
                         <form id="my-contact-form">
-                            <input type="text" id="name" value="" placeholder="Ваше имя" required/>
-                            <br/>
-                            <input type="text" id="email" value="" placeholder="Ваш телефон" required/>
-                            <br/>
-                            <br/>
+                            <input type="text" id="name" value="" placeholder="Ваше имя" required />
+                            <br />
+                            <input type="text" id="email" value="" placeholder="Ваш телефон" required />
+                            <br />
+                            <br />
                             <input type="submit" value="Отправить заявку" id="btn_submit" />
                         </form>
                         <span class="temno"></span>
@@ -150,248 +171,262 @@
                             <br>загрязнения</p>
                         <img src="img/alltypes.jpg" alt="Удаляем все типы пятен" />
                     </div>
-                    <div class="grid-3">
-                        <p>Профессиональное импортное
-                            <br> оборудование</p>
-                        <img src="img/Carpet-machine.jpg" alt="Используем импортное оборудование" />
+                        <div class="grid-3">
+                            <p>Профессиональное импортное
+                                <br> оборудование</p>
+                            <img src="img/Carpet-machine.jpg" alt="Используем импортное оборудование" />
                     </div>
-                    <div class="grid-3">
-                        <p>Скидка <strong>30%</strong>
-                            <br> на второй предмет</p>
-                        <img src="img/discount.jpg" alt="Скидка 30% на второй предмет" />
+                            <div class="grid-3">
+                                <p>Скидка <strong>30%</strong>
+                                    <br> на второй предмет</p>
+                                <img src="img/discount.jpg" alt="Скидка 30% на второй предмет" />
                     </div>
-                    <div class="grid-3">
-                        <p>Выезд в удобное
-                            <br> для Вас время 24 часа в сутки</p>
-                        <img src="img/24order.jpg" alt="Работаем 24 часа" />
+                                <div class="grid-3">
+                                    <p>Выезд в удобное
+                                        <br> для Вас время 24 часа в сутки</p>
+                                    <img src="img/24order.jpg" alt="Работаем 24 часа" />
                     </div>
-                    <div class="grid-3">
-                        <p>Гарантируем безопасность
-                            <br> <span>имущества</span></p>
-                        <img src="img/safety.jpg" alt="Гарантируем безопасность от повреждений" />
+                                    <div class="grid-3">
+                                        <p>Гарантируем безопасность
+                                            <br> <span>имущества</span></p>
+                                        <img src="img/safety.jpg" alt="Гарантируем безопасность от повреждений" />
                     </div>
-                    <div class="grid-3">
-                        <p>Средства гипоаллергенны
-                            <br>и безопасны для детей</p>
-                        <img src="img/ourchem2.jpg" alt="Наши средства не вызывают аллергии" />
+                                        <div class="grid-3">
+                                            <p>Средства гипоаллергенны
+                                                <br>и безопасны для детей</p>
+                                            <img src="img/ourchem2.jpg" alt="Наши средства не вызывают аллергии" />
                     </div>
-                    <div class="grid-3">
-                        <p>Скорость исполнения
-                            <br> заказов</p>
-                        <img src="img/stopwatch.jpg" alt="Скорость исполнения заказа" />
+                                            <div class="grid-3">
+                                                <p>Скорость исполнения
+                                                    <br> заказов</p>
+                                                <img src="img/stopwatch.jpg" alt="Скорость исполнения заказа" />
                     </div>
-                    <div class="grid-3">
-                        <p>100% восстановление
-                            <br> цвета после химчистки</p>
-                        <img src="img/colors.jpg" alt="100% сщхраняем цвет!" />
+                                                <div class="grid-3">
+                                                    <p>100% восстановление
+                                                        <br> цвета после химчистки</p>
+                                                    <img src="img/colors.jpg" alt="100% сщхраняем цвет!" />
                     </div>
-                </div>
-                <div class="grid-12">
-                    <p class="zakaz_xim">
-                        <span>Заказать химчистку</span>
-                    </p>
-                </div>
+                                                </div>
+                                                <div class="grid-12">
+                                                    <p class="zakaz_xim">
+                                                        <span>Заказать химчистку</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="grid-12 blok4">
+                                                <h3>НАШИ <span class="zel">РАБОТЫ</span></h3>
+                                                <div class="grid-12 do_posle">
+                                                    <div class="grid-6">
+                                                        <figure class="cd-image-container">
+                                                            <img src="img/after4.jpg" alt="Матрас до химчистки" />
+                                                            <span class="cd-image-label" data-type="original">После</span>
+                                                            <div class="cd-resize-img">
+                                                                <img src="img/before4.jpg" alt="Матрас после химчистки" />
+                                                                <span class="cd-image-label" data-type="modified">До</span>
+                                                            </div>
+                                                            <span class="cd-handle"></span>
+                                                        </figure>
+                                                    </div>
+                                                    <div class="grid-6">
+                                                        <figure class="cd-image-container">
+                                                            <img src="img/after2.jpg" alt="Диван до химчистки" />
+                                                            <span class="cd-image-label" data-type="original">После</span>
+                                                            <div class="cd-resize-img">
+                                                                <img src="img/before2.jpg" alt="Диван после химчистки" />
+                                                                <span class="cd-image-label" data-type="modified">До</span>
+                                                            </div>
+                                                            <span class="cd-handle"></span>
+                                                        </figure>
+                                                    </div>
+                                                    <div class="grid-6">
+                                                        <figure class="cd-image-container">
+                                                            <img src="img/carpet-after.jpg" alt="Стул до химчистки" />
+                                                            <span class="cd-image-label" data-type="original">После</span>
+                                                            <div class="cd-resize-img">
+                                                                <img src="img/carpet-before.jpg" alt="Стул после химчистки" />
+                                                                <span class="cd-image-label" data-type="modified">До</span>
+                                                            </div>
+                                                            <span class="cd-handle"></span>
+                                                        </figure>
+                                                    </div>
+                                                    <div class="grid-6">
+                                                        <figure class="cd-image-container">
+                                                            <img src="img/after1.jpg" alt="Матрас до химчистки" />
+                                                            <span class="cd-image-label" data-type="original">После</span>
+                                                            <div class="cd-resize-img">
+                                                                <img src="img/before1.jpg" alt="Матрас после химчистки" />
+                                                                <span class="cd-image-label" data-type="modified">До</span>
+                                                            </div>
+                                                            <span class="cd-handle"></span>
+                                                        </figure>
+                                                    </div>
+                                                    <div class="grid-6">
+                                                        <figure class="cd-image-container">
+                                                            <img src="img/ugolok-posle@1x.jpg" alt="Уголок после химчистки" />
+                                                            <span class="cd-image-label" data-type="original">После</span>
+                                                            <div class="cd-resize-img">
+                                                                <img src="img/ugolok-do.jpg" alt="Уголок до химчистки" />
+                                                                <span class="cd-image-label" data-type="modified">До</span>
+                                                            </div>
+                                                            <span class="cd-handle"></span>
+                                                        </figure>
+                                                    </div>
+                                                    <div class="grid-6">
+                                                        <figure class="cd-image-container">
+                                                            <img src="img/orange-carpet-posle@1x.jpg" alt="Ковер после химчистки" />
+                                                            <span class="cd-image-label" data-type="original">После</span>
+                                                            <div class="cd-resize-img">
+                                                                <img src="img/orange-carpet-do@1x.jpg" alt="Ковер до химчистки" />
+                                                                <span class="cd-image-label" data-type="modified">До</span>
+                                                            </div>
+                                                            <span class="cd-handle"></span>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                                <div class="grid-12">
+                                                    <p class="zakaz_xim">
+                                                        <span>Заказать химчистку</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="grid-12 blok5" id="cena">
+                                                <h4>НАШИ ЦЕНЫ НА <span class="zel">УБОРКУ, МОЙКУ И ХИМЧИСТКУ</span></h4>
+                                                <div class="grid-12 prais">
+                                                    <div class="grid-3">
+                                                        <div class="usluga">
+                                                            <img src="img/sofa-price.jpg" alt="Химчистка дивана за место">
+                                                            <div class="usluga_opis">
+                                                                <p>Химчистка дивана</p>
+                                                                <p class="cena">от 490₽ за место</p>
+                                                                <p><span>Заказать</span></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="grid-3">
+                                                        <div class="usluga">
+                                                            <img src="img/machin-wash.png" alt="Химчистка ковров в цеху">
+                                                            <div class="usluga_opis">
+                                                                <p>Химчистка ковров в цеху с вывозом</p>
+                                                                <p class="cena">от 200₽ за метр</p>
+                                                                <p><span>Заказать</span></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="grid-3">
+                                                        <div class="usluga">
+                                                            <img src="img/general-cleaning.jpg" alt="Уборка квартир">
+                                                            <div class="usluga_opis">
+                                                                <p>Уборка квартир</p>
+                                                                <p class="cena">от 1900₽</p>
+                                                                <p><span>Заказать</span></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="grid-3">
+                                                        <div class="usluga">
+                                                            <img src="img/carpet-price.jpg" alt="Химчистка ковра на дому">
+                                                            <div class="usluga_opis">
+                                                                <p>Химчистка ковра НА ДОМУ</p>
+                                                                <p class="cena">от 150₽ за метр</p>
+                                                                <p><span>Заказать</span></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="grid-3">
+                                                        <div class="usluga">
+                                                            <img src="img/mattres-price.jpg" alt="Химчистка матраса за место">
+                                                            <div class="usluga_opis">
+                                                                <p>Химчистка матраса</p>
+                                                                <p class="cena">от 490₽ место</p>
+                                                                <p><span>Заказать</span></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="grid-3">
+                                                        <div class="usluga">
+                                                            <img src="img/armchair-price.jpg" alt="Химчистка кресла">
+                                                            <div class="usluga_opis">
+                                                                <p>Химчистка кресла</p>
+                                                                <p class="cena">от 490₽</p>
+                                                                <p><span>Заказать</span></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="grid-3">
+                                                        <div class="usluga">
+                                                            <img src="img/chair-price.jpg" alt="Химчистка стула">
+                                                            <div class="usluga_opis">
+                                                                <p>Химчистка стула</p>
+                                                                <p class="cena">150₽ за шт.</p>
+                                                                <p><span>Заказать</span></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="grid-3">
+                                                        <div class="usluga">
+                                                            <img src="img/cat-pepe.jpg" alt="Удаление запаха животных">
+                                                            <div class="usluga_opis">
+                                                                <p>Удаление запахов</p>
+                                                                <p class="cena">от 490₽</p>
+                                                                <p><span>Заказать</span></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="grid-12">
+                                                    <p class="zakaz_xim">
+                                                        <a target="_blank" href="price-4.11.18.pdf" title="Скачать полный прайс-лист">Скачать полный прайс лист</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="grid-12 blok6">
+                                                <h5>КАК МЫ ДЕЛАЕМ<span class="zel"> ХИМЧИСТКУ</span></h5>
+                                                <img src="img/blok6.jpg" alt="Химчистка ковра" />
             </div>
-            <div class="grid-12 blok4">
-                <h3>НАШИ <span class="zel">РАБОТЫ</span></h3>
-                <div class="grid-12 do_posle">
-                    <div class="grid-6">
-                        <figure class="cd-image-container">
-                            <img src="img/after4.jpg" alt="Матрас до химчистки" />
-                            <span class="cd-image-label" data-type="original">После</span>
-                            <div class="cd-resize-img">
-                                <img src="img/before4.jpg" alt="Матрас после химчистки" />
-                                <span class="cd-image-label" data-type="modified">До</span>
-                            </div>
-                            
-                                <span class="cd-handle"></span>
-                            
-                        </figure>
-                    </div>
-                    <div class="grid-6">
-                        <figure class="cd-image-container">
-                            <img src="img/after2.jpg" alt="Диван до химчистки" />
-                            <span class="cd-image-label" data-type="original">После</span>
-                            <div class="cd-resize-img">
-                                <img src="img/before2.jpg" alt="Диван после химчистки" />
-                                <span class="cd-image-label" data-type="modified">До</span>
-                            </div>
-                            
-                                <span class="cd-handle"></span>
-                            
-                        </figure>
-                    </div>
-                    <div class="grid-6">
-                        <figure class="cd-image-container">
-                            <img src="img/carpet-after.jpg" alt="Стул до химчистки" />
-                            <span class="cd-image-label" data-type="original">После</span>
-                            <div class="cd-resize-img">
-                                <img src="img/carpet-before.jpg" alt="Стул после химчистки" />
-                                <span class="cd-image-label" data-type="modified">До</span>
-                            </div>
-                            
-                                <span class="cd-handle"></span>
-                            
-                        </figure>
-                    </div>
-                    <div class="grid-6">
-                        <figure class="cd-image-container">
-                            <img src="img/after1.jpg" alt="Диван до химчистки" />
-                            <span class="cd-image-label" data-type="original">После</span>
-                            <div class="cd-resize-img">
-                                <img src="img/before1.jpg" alt="Диван после химчистки" />
-                                <span class="cd-image-label" data-type="modified">До</span>
-                            </div>
-                            
-                                <span class="cd-handle"></span>
-                            
-                        </figure>
-                    </div>
-                </div>
-                <div class="grid-12">
-                    <p class="zakaz_xim">
-                        <span>Заказать химчистку</span>
-                    </p>
-                </div>
-            </div>
-            <div class="grid-12 blok5" id="cena">
-                <h4>НАШИ ЦЕНЫ НА <span class="zel">УБОРКУ, МОЙКУ И ХИМЧИСТКУ</span></h4>
-                <div class="grid-12 prais">
-                    <div class="grid-3">
-                        <div class="usluga">
-                            <img src="img/sofa-price.jpg" alt="Химчистка дивана за место">
-                            <div class="usluga_opis">
-                                <p>Химчистка дивана</p>
-                                <p class="cena">от 490₽ за место</p>
-                                <p><span>Заказать</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-3">
-                        <div class="usluga">
-                            <img src="img/machin-wash.png" alt="Химчистка ковров в цеху">
-                            <div class="usluga_opis">
-                                <p>Химчистка ковров в цеху с вывозом</p>
-                                <p class="cena">от 200₽ за метр</p>
-                                <p><span>Заказать</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-3">
-                        <div class="usluga">
-                            <img src="img/general-cleaning.jpg" alt="Уборка квартир">
-                            <div class="usluga_opis">
-                                <p>Уборка квартир</p>
-                                <p class="cena">от 1900₽</p>
-                                <p><span>Заказать</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-3">
-                        <div class="usluga">
-                            <img src="img/carpet-price.jpg" alt="Химчистка ковра на дому">
-                            <div class="usluga_opis">
-                                <p>Химчистка ковра НА ДОМУ</p>
-                                <p class="cena">от 150₽ за метр</p>
-                                <p><span>Заказать</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-3">
-                    	<div class="usluga">
-                            <img src="img/mattres-price.jpg" alt="Химчистка матраса за место">
-                            <div class="usluga_opis">
-                                <p>Химчистка матраса</p>
-                                <p class="cena">от 490₽ место</p>
-                                <p><span>Заказать</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-3">
-                        <div class="usluga">
-                            <img src="img/armchair-price.jpg" alt="Химчистка кресла">
-                            <div class="usluga_opis">
-                                <p>Химчистка кресла</p>
-                                <p class="cena">от 490₽</p>
-                                <p><span>Заказать</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-3">
-                        <div class="usluga">
-                            <img src="img/chair-price.jpg" alt="Химчистка стула">
-                            <div class="usluga_opis">
-                                <p>Химчистка стула</p>
-                                <p class="cena">150₽ за шт.</p>
-                                <p><span>Заказать</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-3">
-                        <div class="usluga">
-                            <img src="img/cat-pepe.jpg" alt="Удаление запаха животных">
-                            <div class="usluga_opis">
-                                <p>Удаление запахов</p>
-                                <p class="cena">от 490₽</p>
-                                <p><span>Заказать</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-12">
-                    <p class="zakaz_xim">
-                        <a target="_blank" href="price-4.11.18.pdf" title="Скачать полный прайс-лист">Скачать полный прайс лист</a>
-                    </p>
-                </div>
-            </div>
-            <div class="grid-12 blok6">
-                <h5>КАК МЫ ДЕЛАЕМ<span class="zel"> ХИМЧИСТКУ</span></h5>
-                <img src="img/blok6.jpg" alt="Химчистка ковра" />
-            </div>
-            <div class="grid-12 our-workers">
-               <h4>НАШЫ<span class="zel"> РАБОТНИКИ</span></h5>
+                                                <div class="grid-12 our-workers">
+                                                    <h4>НАШЫ<span class="zel"> РАБОТНИКИ</span></h5>
                 <div class="owl-carousel owl-theme">
-									<div class="item our-workers__unit-container">
-											<div class="our-workers__unit-name">
-													<span>Игорь</span>
-											</div>
-											<div class="our-workers__unit-photo">
-													<img src="img/man.svg" alt="Фото работника">
-											</div>
-											<div class="our-workers__unit-info">
-													<span>Специализация: Химчистка</span>
-													<span>Опыт: 4 года</span>
-													<span>Оценка клиентов 👍: 4,8</span>
-											</div>
-									</div>
-									<div class="item our-workers__unit-container">
-											<div class="our-workers__unit-name">
-													<span>Игорь</span>
-											</div>
-											<div class="our-workers__unit-photo">
-													<img src="img/man.svg" alt="Фото работника" width="300" height="300">
-											</div>
-											<div class="our-workers__unit-info">
-													<span>Специализация: Химчистка</span>
-													<span>Опыт: 4 года</span>
-													<span>Оценка клиентов 👍: 4,8</span>
-											</div>
-									</div>
-									<div class="item our-workers__unit-container">
-											<div class="our-workers__unit-name">
-													<span>Игорь</span>
-											</div>
-											<div class="our-workers__unit-photo">
-													<img src="img/man.svg" alt="Фото работника">
-											</div>
-											<div class="our-workers__unit-info">
-													<span>Специализация: Химчистка</span>
-													<span>Опыт: 4 года</span>
-													<span>Оценка клиентов 👍: 4,8</span>
-											</div>
-									</div>
-								</div>
-           			<div class="grid-12">
+                                    <div class="item our-workers__unit-container">
+                                            <div class="our-workers__unit-name">
+                                                    <span>Игорь</span>
+                                            </div>
+                                            <div class="our-workers__unit-photo">
+                                                    <img src="img/cleaner-2.jpg" alt="Фото работника">
+                                            </div>
+                                            <div class="our-workers__unit-info">
+                                                    <span>Специализация: Химчистка</span>
+                                                    <span>Опыт: 4 года</span>
+                                                    <span>Оценка клиентов 👍: 4,9</span>
+                                            </div>
+                                    </div>
+                                    <div class="item our-workers__unit-container">
+                                            <div class="our-workers__unit-name">
+                                                    <span>Олег</span>
+                                            </div>
+                                            <div class="our-workers__unit-photo">
+                                                    <img src="img/cleaner-1.jpg" alt="Фото работника" width="300" height="300">
+                                            </div>
+                                            <div class="our-workers__unit-info">
+                                                    <span>Специализация: Химчистка</span>
+                                                    <span>Опыт: 3 года</span>
+                                                    <span>Оценка клиентов 👍: 4,8</span>
+                                            </div>
+                                    </div>
+                                    <div class="item our-workers__unit-container">
+                                            <div class="our-workers__unit-name">
+                                                    <span>Андрей</span>
+                                            </div>
+                                            <div class="our-workers__unit-photo">
+                                                    <img src="img/cleaner-3.jpg" alt="Фото работника">
+                                            </div>
+                                            <div class="our-workers__unit-info">
+                                                    <span>Специализация: Химчистка</span>
+                                                    <span>Опыт: 2 года</span>
+                                                    <span>Оценка клиентов 👍: 4,8</span>
+                                            </div>
+                                    </div>
+                                </div>
+                    <div class="grid-12">
                     <p class="zakaz_xim">
                         <span>Заказать химчистку</span>
                     </p>
@@ -399,12 +434,12 @@
             </div>
             <div class="grid-12 blok7">
                 <h5>НАШЕ<span class="zel"> ОБОРУДОВАНИЕ</span></h5>
-                <div class="grid-6">						
+                <div class="grid-6">                        
                     <h6>Santoemma Sabrina-Maxi</h6>
                     <img src="img/7_1.png" alt="Santoemma Sabrina-Maxi" />
                     <p>Ковровый экстрактор Santoemma Sabrina Maxi предназначен для профессиональной чистки ковровых покрытий, мебельной обивки, салонов автомобилей, полов и матрасов. Благодаря увеличенному давлению подачи чистящего раствора (9 бар), а также непревзойденной силе всасывания (мощность турбины 1200Wt) аппарат обеспечивает безукориизненную чистоту и эффективность уборки за короткое время.
                     </p>
-                </div>				
+                </div>              
                 <div class="grid-6">
                     <h6>Средства «Chemspec»</h6>
                     <img src="img/chemspec.png" width="600" height="600" alt="Chemspec" />
@@ -582,6 +617,7 @@
     </footer>
     <!-- scripts -->
     <script src="libs/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+    <script src="js/nav-bar.js"></script>
     <script src="js/script_ft.js"></script>
     <script src="js/owl.js"></script>
     <script src="js/footer-reveal.min.js"></script>
