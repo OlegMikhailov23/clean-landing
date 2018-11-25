@@ -1,0 +1,648 @@
+
+
+.clear-grid{
+    clear:both;
+    float:inherit;
+}
+.container {
+    margin:0%;
+    width: 100%;
+}
+.container:after, .container:before {
+    display: table;
+    clear:both;
+    content: " ";
+}
+.nest {
+    margin:0 -10px;
+    padding:0;
+    width:auto;
+}
+
+/*********************************************************************************************
+
+2.  Mobile Grid
+
+*********************************************************************************************/
+
+
+.grid-m-12 {
+    width: 100%;
+}
+.grid-m-11 {
+    width: 91.666663%;
+}
+.grid-m-10 {
+    width: 83.33%;
+}
+.grid-m-9 {
+    width: 74.999997%;
+}
+.grid-m-8 {
+    width: 66.66666664%;
+}
+.grid-m-7 {
+    width: 58.333%;
+}
+.grid-m-6 {
+    width: 50%;
+}
+.grid-m-5 {
+    width: 41.6665%;
+}
+.grid-m-4 {
+    width: 33.33%;
+}
+.grid-m-3 {
+    width: 24.99%;
+}
+.grid-m-2 {
+    width: 16.66666%;
+}
+.grid-m-1 {
+    width: 8.33%;
+}
+
+/*********************************************************************************************
+
+3.  Grid 720px+
+
+*********************************************************************************************/
+
+@media (min-width: 720px) {
+    .grid-12 {
+        width: 100%;
+    }
+    .grid-11 {
+        width: 91.666663%;
+    }
+    .grid-10 {
+        width: 83.33%;
+    }
+    .grid-9 {
+        width: 74.999997%;
+    }
+    .grid-8 {
+        width: 66.66666664%;
+    }
+    .grid-7 {
+        width: 58.333%;
+    }
+    .grid-6 {
+        width: 50%;
+    }
+    .grid-5 {
+        width: 41.6665%;
+    }
+    .grid-4 {
+        width: 33.33%;
+    }
+    .grid-3 {
+        width: 24.99%;
+    }
+    .grid-2 {
+        width: 16.66666%;
+    }
+    .grid-1 {
+        width: 8.33%;
+    }
+
+    .grid-t-12 {
+        width: 100%;
+    }
+    .grid-t-11 {
+        width: 91.666663%;
+    }
+    .grid-t-10 {
+        width: 83.33%;
+    }
+    .grid-t-9 {
+        width: 74.999997%;
+    }
+    .grid-t-8 {
+        width: 66.66666664%;
+    }
+    .grid-t-7 {
+        width: 58.333%;
+    }
+    .grid-t-6 {
+        width: 50%;
+    }
+    .grid-t-5 {
+        width: 41.6665%;
+    }
+    .grid-t-4 {
+        width: 33.33%;
+    }
+    .grid-t-3 {
+        width: 24.99%;
+    }
+    .grid-t-2 {
+        width: 16.66666%;
+    }
+    .grid-t-1 {
+        width: 8.33%;
+    }
+}
+
+/*********************************************************************************************
+
+4.  Grid 1024px+
+
+*********************************************************************************************/
+
+@media only screen and (min-width: 1024px) {
+    .grid-tl-12 {
+        width: 100%;
+    }
+    .grid-tl-11 {
+        width: 91.666663%;
+    }
+    .grid-tl-10 {
+        width: 83.33%;
+    }
+    .grid-tl-9 {
+        width: 74.999997%;
+    }
+    .grid-tl-8 {
+        width: 66.66666664%;
+    }
+    .grid-tl-7 {
+        width: 58.333%;
+    }
+    .grid-tl-6 {
+        width: 50%;
+    }
+    .grid-tl-5 {
+        width: 41.6665%;
+    }
+    .grid-tl-4 {
+        width: 33.33%;
+    }
+    .grid-tl-3 {
+        width: 24.99%;
+    }
+    .grid-tl-2 {
+        width: 16.66666%;
+    }
+    .grid-tl-1 {
+        width: 8.33%;
+    }
+}
+
+
+/*********************************************************************************************
+
+5.  Grid 1200px+
+
+*********************************************************************************************/
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width:100%;
+        margin:0 auto;
+    }
+    .container-fluid {
+        max-width:90%;
+        margin:0 5%;
+    }
+    .grid-d-12 {
+        width: 100%;
+    }
+    .grid-d-11 {
+        width: 91.666663%;
+    }
+    .grid-d-10 {
+        width: 83.33%;
+    }
+    .grid-d-9 {
+        width: 74.999997%;
+    }
+    .grid-d-8 {
+        width: 66.66666664%;
+    }
+    .grid-d-7 {
+        width: 58.333%;
+    }
+    .grid-d-6 {
+        width: 50%;
+    }
+    .grid-d-5 {
+        width: 41.6665%;
+    }
+    .grid-d-4 {
+        width: 33.33%;
+    }
+    .grid-d-3 {
+        width: 24.99%;
+    }
+    .grid-d-2 {
+        width: 16.66666%;
+    }
+    .grid-d-1 {
+        width: 8.33%;
+    }
+}
+@media only screen and (max-width: 2000px) {
+    .text_blok2{
+    width: 60%;
+    margin-left: 20%;
+}
+.foto_blok2{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 15px;
+}
+}
+@media only screen and (max-width: 1700px) {
+    .text_blok2{
+    width: 70%;
+    margin-left: 15%;
+}
+.foto_blok2{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 15px;
+}
+}
+@media only screen and (max-width: 1500px) {
+    .text_blok2{
+    width: 80%;
+    margin-left: 10%;
+}
+.foto_blok2{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 30px;
+}
+}
+@media only screen and (max-width: 1430px) {
+    .bloki_blok3 p{
+    font-size:1.25em;
+}
+}
+@media only screen and (max-width: 1350px) {
+ #footer .footer_right{
+    padding: 40px;
+    position: absolute;
+    width: 40%;
+    right: 50px;
+    top:100px;
+    color:#fff;
+    font-size: 1.3em;
+}
+}
+@media only screen and (max-width: 1300px) {
+   #footer .footer_right{
+    padding: 40px;
+    position: absolute;
+    width: 40%;
+    right: 50px;
+    top:100px;
+    color:#fff;
+    font-size: 1.2em;
+}
+    .text_blok2 p{
+    margin-top: 10px;
+    line-height: 1.3;
+    font-size: 1.1em;
+}
+.bloki_blok3 p{
+    font-size:1.1em;
+}
+}
+@media only screen and (max-width: 1200px) {
+    #footer .footer_right{
+    padding: 30px;
+    position: absolute;
+    width: 40%;
+    right: 50px;
+    top:100px;
+    color:#fff;
+    font-size: 1.2em;
+}
+   
+    .FormaRight #btn_submit{
+    font-size: 1.2em;
+}
+ #my-contact-formZv #btn_submit{
+    font-size: 1em;
+}
+.bloki_blok3 p{
+    font-size:1em;
+}
+.FormFT{
+    position: fixed;
+     top:20%;
+     width: 50%;
+     left: 50%;
+     margin-left: -25%;
+     z-index: 9999;
+     background: #049aff;
+     padding: 25px 15px;
+     text-align: center;
+     display: none;
+}
+}
+@media only screen and (max-width: 1100px) {
+    .voprosi h6{
+    font-size: 1.7em;
+    }
+    .voprosi span{
+    font-size: 1.4em;
+    }
+     #footer .footer_right{
+    padding: 30px;
+    position: absolute;
+    width: 50%;
+    right: 50px;
+    top:100px;
+    color:#fff;
+    font-size: 1.2em;
+}
+    .blok3 h3{
+    width: 100%;
+    margin-left: 0;
+}
+    .text_blok2 p{
+    margin-top: 8px;
+    line-height: 1.2;
+    font-size: 1em;
+}
+
+    .FormZv{
+     width: 50%;
+     left: 50%;
+     margin-left: -25%;
+}
+   
+    .FormaRight #btn_submit{
+    font-size: 1.1em;
+}
+    .logo img{
+    width: 40%;
+    float: left;
+    margin-left: 3%;
+}
+.zakaz_zvonok a{
+    font-size: 1em;
+}
+.logo span{
+    width: 50%;
+    font-size: 0.8em;
+}
+.tel a{
+    font-size: 1.2em;
+}
+}
+@media only screen and (max-width: 1050px) {
+    .bloki_blok3 p{
+    font-size:0.9em;
+    padding: 15px 3px;
+}
+    
+    .FormaRight{
+          width: 80%;
+    margin-left: 10%;
+    }
+    .FormaRight p{
+    font-size: 0.9em;
+}
+    .FormaRight input{
+    width: 80%;
+    margin-left: 10%;
+    padding: 7px;
+}
+ .FormaRight #btn_submit{
+    font-size: 1em;
+}
+ .blok1{
+    background: url('../img/back-main.jpg') no-repeat 100% 100% fixed;
+    background-size: 140% 100%;
+    background-position-x: left;
+}
+}
+@media only screen and (max-width:930px) {
+    .bloki_blok3 p{
+    font-size:0.85em;
+    padding: 15px 3px;
+}
+    .text_blok2 p{
+    margin-top: 3px;
+    line-height: 1;
+    font-size: 0.9em;
+}
+   
+    .FormaRight h5{
+    font-size: 1.5em;
+}
+    .zakaz_zvonok a{
+    font-size: 0.85em;
+    padding: 6px 9px;
+}
+.tel a{
+    font-size: 1em;
+}
+}
+@media only screen and (max-width:870px) {
+    .bloki_blok3 p{
+    font-size:0.8em;
+    padding: 15px 0;
+}
+#footer .footer_right{
+    padding: 20px;
+    position: absolute;
+    width: 50%;
+    right: 20px;
+    top:100px;
+    color:#fff;
+    font-size: 1.1em;
+}
+}
+@media only screen and (max-width:840px) {
+    
+    .blok1{
+    background: url('../img/back-main.jpg') no-repeat 100% 100% fixed;
+    background-size: 160% 100%;
+    background-position-x: left;
+}
+    .FormaRight{
+          width: 94%;
+    margin-left: 3%;
+    }
+    .logo span{
+    display:none;
+}
+.logo img{
+    width: 67%;
+    float: left;
+    margin-left: 9%;
+}
+nav ul{
+    margin-left:0;
+}
+.nav li{
+    margin-left: 4%;
+}
+}
+@media only screen and (max-width:800px) {
+   
+.zakaz_zvonok a{
+    font-size: 0.8em;
+    padding: 6px 7px;
+}
+
+.tel a{
+    font-size: 0.9em;
+}
+}
+@media only screen and (max-width:770px) {
+ #footer .footer_right{
+    padding: 20px;
+    position: absolute;
+    width: 50%;
+    right: 20px;
+    top:100px;
+    color:#fff;
+    font-size: 1em;
+}
+}
+@media only screen and (max-width:740px) {
+   
+    .bloki_blok3 p{
+    font-size:0.77em;
+    padding: 15px 0;
+}
+}
+@media only screen and (max-width:720px) {
+    .footer_bottom{
+        display:none;
+    }
+    .FormFT{
+    position: fixed;
+     top:20%;
+     width: 80%;
+     left: 50%;
+     margin-left: -40%;
+     z-index: 9999;
+     background: #049aff;
+     padding: 25px 15px;
+     text-align: center;
+     display: none;
+}
+    .bloki_blok3 p{
+    font-size:1.4em;
+    padding: 15px;
+}
+    .text_blok2 p{
+    margin-top: 10px;
+    line-height: 1.2;
+    font-size: 1.1em;
+}
+    .FormZv{
+     width: 70%;
+     left: 50%;
+     margin-left: -35%;
+}
+    .logo img{
+    width: 50%;
+    float: left;
+    margin-left: 25%;
+}
+.nav{
+    display:none;
+}
+.zakaz_zvonok{
+     display:none;
+}
+.tel a{
+    font-size: 1.5em;
+}
+ .blok1{
+    background: url('../img/back-main.jpg') no-repeat 100% 100% scroll;
+    background-size: 140% 100%;
+    background-position-x: left;
+}
+.messages{
+     position: fixed;
+     top:20%;
+     width: 90%;
+     left: 50%;
+     margin-left: -45%;
+     z-index: 9999;
+     background: #049aff;
+     padding: 25px 25px;
+     text-align: center;
+     font-size: 1em;
+     display: none;
+}
+}
+@media only screen and (max-width:640px) {
+    .voprosi{
+        text-align:center;
+    }
+    .opepator{
+        display:none;
+    }
+}
+@media only screen and (max-width:540px) {
+    .zakaz_xim a{
+        font-size:0.8em;
+    }
+    .voprosi h6{
+    font-size: 1.2em;
+    }
+    .voprosi span{
+    font-size: 1.1em;
+    }
+   
+    .blok7 h5{
+    width: 100%;
+    margin-left: 0;
+}
+    #footer .footer_right{
+    display:none;
+}
+}
+@media only screen and (max-width:490px) {
+    .FormFT{
+    position: fixed;
+     top:20%;
+     width: 96%;
+     left: 50%;
+     margin-left: -48%;
+     z-index: 9999;
+     background: #049aff;
+     padding: 25px 15px;
+     text-align: center;
+     display: none;
+}
+   
+    .blok3 h3{
+        font-size:1.7em;
+    }
+    .bloki_blok3 p{
+    font-size:1.24em;
+    padding: 15px 5px;
+}
+    .FormZv{
+     width: 90%;
+     left: 50%;
+     margin-left: -45%;
+}
+     .blok1{
+    background-size: 250% 100%;
+    background-position-x: left;
+}
+}
+/*********************************************************************************************
+
+6.  Helper classes
+
+*********************************************************************************************/
+
+
+img{
+    max-width: 100%;
+    height: auto;
+}
