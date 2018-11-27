@@ -12,8 +12,8 @@
 .page-header__logo {
 		display: flex;
 		background: linear-gradient(to bottom, #049aff, #86c5ff);
-		padding-left: 3%;
-		padding-right: 3%;
+		padding-left: 2%;
+		padding-right: 2%;
 		justify-content: space-between;
 		align-items: center;
 }
@@ -185,6 +185,7 @@
 
 .main-nav--opened .main-nav__wrapper {
   position: absolute;
+	height: 80vh;
   top: 0;
   right: 0;
   left: 70px;
@@ -229,34 +230,35 @@
 }
 
 @media @desktop-widths {
+	
   .page-header {
       display: flex;
       position: fixed;
-      min-height: 90px;
-      background-image: url("../../img/page-header-bg.jpg");
+      min-height: 50px;
+			justify-content: center;
   }
   
-  .page-header::after {
-    content: "";
-    position: absolute;
-    width: 1300px;
-    height: 50px;
-    top: 45px;
-    left: 0;
-    background-color: #353533;
-    opacity: 0.3;
-    z-index: 5;
-  }
+.page-header__logo {
+				width: 60%;
+				justify-content: space-between;
+		}
   
   .page-header__logo-link {
-      position: relative;
-      padding-left: 160px;
-      padding-right: 95px;
-      height: 45px;
-      .font-size(24px, 25px);
-      letter-spacing: 1px;
+      position: static;
+			width: 45%;
   }
-  
+	
+	.page-header__phone a {
+	padding-left: 1%;
+	font-size: 1em;
+	padding-left: 15%;
+  font-family: inherit;
+		&::before {
+			top: -2%;
+			left: -1%;
+		}
+	}
+	
   .main-nav__toggle {
       display: none;
   }
@@ -264,18 +266,20 @@
   .main-nav--closed .main-nav__item {
       display: block;
   }
-  
-  .page-header .main-nav {
-    max-height:  40px;
-    margin-top: -5px;
-  }
+	
+	.page-header .main-nav {
+			padding-left: 1%;
+			background: linear-gradient(to bottom, #049aff, #86c5ff);
+	}
+	
+	.main-nav--opened .main-nav__wrapper {
+		height: auto;
+	}
   
   .main-nav__items {
       display: flex;
-  }
-  
-  .main-nav {
-    padding-left: 6px;
+			justify-content: flex-start;
+			flex-wrap: nowrap;
   }
   
   .main-nav__item a {
@@ -283,10 +287,10 @@
      color: #ffffff;
      text-decoration: none;
      display: block;
-     padding: 15px 15px;
+     padding: 10px 10px;
      padding-bottom: 13px;
      padding-top: 10px;
-     .font-size(14px, 36px);
+     .font-size(18px, 36px);
      text-transform: none;
      border-top: none;
      border-bottom: none;
@@ -296,7 +300,19 @@
   .main-nav--closed .main-nav__toggle::before{
     display: none;
   }
-  
+	
+	.main-nav--closed .main-nav__item {
+			display: block;
+	}
+	
+	.main-nav--opened .main-nav__wrapper {
+		animation: none;
+	}
+	
+	.main-nav--opened .main-nav__wrapper::before {
+		display: none;
+	}
+
   .main-nav__item a[href] {
   &:hover {
   background-color: none;
