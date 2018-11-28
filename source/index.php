@@ -93,7 +93,7 @@
             <header class="page-header grid-12">
                 <div class="page-header__logo">
                     <a href="#glav" class="page-header__logo-link"><img src="img/transplogo.png" alt="Логотип Clean Profit"/></a>
-                    <span class="page-header__phone"><a href="tel:+7(812)9286362"> 8(812)928-63-62</a></span>
+                    <span class="page-header__phone"><a href="tel:+7(812)9286362">+7(812)928-63-62</a></span>
                 </div>
                 <nav class="main-nav grid-12 main-nav--closed main-nav--nojs">
                     <button class="main-nav__toggle" type="button">Открыть меню</button>
