@@ -37,25 +37,6 @@ gulp.task('serve', function() {
     });
 });
 
-gulp.task('scripts', function() {
-    return gulp.src([ // Берем все необходимые библиотеки
-        'source/libs/jquery/dist/jquery.min.js', // Берем jQuery
-        'source/libs/magnific-popup/dist/jquery.magnific-popup.min.js' // Берем Magnific Popup
-        ])
-        .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
-        .pipe(uglify()) // Сжимаем JS файл
-        .pipe(gulp.dest('source/js')); // Выгружаем в папку source/js
-});
-
-gulp.task('css-libs', function() {
-    return gulp.src('source/less/libs.less')
-        .pipe(less())
-        .pipe(gulp.dest('source/css'))
-        .pipe(cssnano()) // Сжимаем
-        .pipe(rename('libs.min.css')) // Добавляем суффикс .min
-        .pipe(gulp.dest('source/css')); // Выгружаем в папку source/css
-});
-
 gulp.task('watch', ['serve','style'], function() {
     gulp.watch('source/less/**/*.less', ['style']); // Наблюдение за less файлами
     // Наблюдение за другими типами файлов
@@ -78,7 +59,7 @@ gulp.task('img', function() {
         .pipe(gulp.dest('build/img')); // Выгружаем на продакшен
 });
 
-gulp.task('build', ['clean', 'img', 'style','css-libs', 'scripts'], function() {
+gulp.task('build', ['clean', 'img', 'style'], function() {
 
     var buildCss = gulp.src([ // Переносим CSS стили в продакшен
             'source/css/*.css',
@@ -94,6 +75,18 @@ gulp.task('build', ['clean', 'img', 'style','css-libs', 'scripts'], function() {
 
     var buildHtml = gulp.src('source/*.html') // Переносим HTML в продакшен
         .pipe(gulp.dest('build'));
+
+    var buildHtml = gulp.src('source/*.php') // Файлы PHP
+        .pipe(gulp.dest('build'));
+
+    var buildHtml = gulp.src('source/favicon.png') // Иконка сайта
+        .pipe(gulp.dest('build'));
+
+    var buildHtml = gulp.src('source/*.pdf') // Иконка сайта
+        .pipe(gulp.dest('build'));
+
+    var buildHtml = gulp.src('source/libs/**/*') // Библиотеки
+        .pipe(gulp.dest('build/libs'));
 });
 
 gulp.task('clear', function() {

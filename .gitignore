@@ -1,4 +1,13 @@
-*.xml
-google842048bbc427e6f7.html
+node_modules/
+.DS_Store
+Thumbs.db
+.idea
+*.sublime*
+*.log
+*.psd
+*.ai
 *.pdf
+*.xml
+build/
+google842048bbc427e6f7.html
 .htaccess
