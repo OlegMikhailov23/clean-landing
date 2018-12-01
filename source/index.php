@@ -17,10 +17,7 @@
     <meta name="yandex-verification" content="0aa13b7b52b7a2d0" />
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <!--Скрипты-->
-    <script src="js/jquery211.js"></script>
-    <script src="js/script_hd.js"></script>
-    <script src="js/modernizr.js"></script>
-
+    <script src="libs/libs.min.js"></script>
     <!--Фтер-->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
@@ -619,17 +616,7 @@
             </div>
         </div>
     </footer>
-    <!-- scripts -->
-		<script src="libs/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
-    <script src="js/nav-bar.js"></script>
-    <script src="js/script_ft.js"></script>
-    <script src="js/owl.js"></script>
-    <script src="js/footer-reveal.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/maindoposle.js"></script>
-    <script src="js/jquery.flexslider-min.js"></script>
-    <script src="js/main1.js"></script>
-    <script src="js/jquery.mobile.custom.min.js"></script>
+    <script src="js/minjs.js"></script>
 </body>
 
 </html>
