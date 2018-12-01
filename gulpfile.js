@@ -62,8 +62,7 @@ gulp.task('minjs', function() {
 			'source/js/owl.js',
 			'source/js/main.js',
 			'source/js/main1.js',
-			'source/js/footer-reveal.min.js',
-			'source/js/script_hd.js'
+			'source/js/footer-reveal.min.js'
 		])// Берем все необходимые js файлы
         .pipe(concat('minjs.js')) // Собираем их в кучу в новом файле minjs.js
         .pipe(uglify()) // Сжимаем JS файл
@@ -83,18 +82,14 @@ gulp.task('clean', function() {
     return del.sync('build'); // Удаляем папку dist перед сборкой
 });
 
-gulp.task('img', function() {
-    return gulp.src('source/img/**/*') // Берем все изображения из source
-        .pipe(cache(imagemin({ // Сжимаем их с наилучшими настройками
-            interlaced: true,
-            progressive: true,
-            svgoPlugins: [{
-                removeViewBox: false
-            }],
-            use: [pngquant()]
-        })))
-        .pipe(gulp.dest('build/img')); // Выгружаем на продакшен
-});
+gulp.task("img", function() {
+  return gulp.src("source/img/**/*.{png,jpg,gif}")
+    .pipe(cache(imagemin([
+        imagemin.optipng({optimizationLevel: 7}),
+        imagemin.jpegtran({progressive: true})
+    ])))
+    .pipe(gulp.dest("build/img"));
+}); 
 
 gulp.task('build', ['clean', 'img', 'style', 'jslibs', 'minjs'], function() {
 

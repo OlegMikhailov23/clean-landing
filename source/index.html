@@ -18,6 +18,7 @@
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <!--Скрипты-->
     <script src="libs/libs.min.js"></script>
+    <script src="js/script_hd.js"></script>
     <!--Фтер-->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
