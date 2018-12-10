@@ -40,7 +40,7 @@
      });
      
       $(document).ready(function(){
-    $("nav").on("click","a", function (event) {
+    $(".main-nav__item").on("click",".main-nav__item-ussual-link", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
