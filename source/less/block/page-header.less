@@ -7,7 +7,7 @@
     position: fixed;
     z-index: 1000;
     width: 100%;
-		box-shadow: 1px 0 15px 1px #000000;
+    box-shadow: 1px 0 15px 1px #000000;
 }
 
 .page-header__logo {
@@ -62,7 +62,8 @@
     line-height: 28px;
     font-weight: 700;
     font-family: inherit;
-		z-index: 1001;
+    z-index: 1001;
+
     &:hover {
         color: #7bf5b5;
         transition: 0.3s;
@@ -81,7 +82,7 @@
 }
 
 .zvonok {
-	display: none;
+    display: none;
 }
 
 .main-nav__item-active {
@@ -239,6 +240,72 @@
     text-align: left;
 }
 
+.main-nav__item .main-nav__social-link {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    max-width: 200px;
+    min-height: 40px;
+    text-align: center;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    margin-bottom: 3%;
+}
+
+.main-nav__social-link-whatsup {
+    position: relative;
+    background-color: #00c5a8;
+}
+
+.main-nav__social-link-whatsup::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 80%;
+    top: 10%;
+    left: 10px;
+    background-image: url("../img/whatsapp-logo.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.main-nav__social-link-viber {
+    position: relative;
+    background-color: #6f51aa;
+}
+
+.main-nav__social-link-viber::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 80%;
+    top: 10%;
+    left: 10px;
+    background-image: url("../img/viber-logo.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.main-nav__social-link-vk {
+    position: relative;
+    background-color: #35659a;
+}
+
+.main-nav__social-link-vk::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 80%;
+    top: 13%;
+    left: 10px;
+    background-image: url("../img/vk.png");
+    background-size: 85% 75%;
+    background-repeat: no-repeat;
+}
+
 @media @desktop-widths {
 
     .page-header {
@@ -264,17 +331,17 @@
         font-size: 1em;
         padding-left: 15%;
         font-family: inherit;
-
         &::before {
             top: -2%;
             left: -1%;
         }
     }
-	.main-nav {
-		display: flex;
-		justify-content: space-between;
-		z-index: 99;
-	}
+
+    .main-nav {
+        display: flex;
+        justify-content: space-between;
+        z-index: 99;
+    }
 
     .main-nav__toggle {
         display: none;
@@ -366,9 +433,13 @@
     .main-nav__item-active {
         border: none;
     }
-	
-		.zvonok {
-				display: block;
-				margin-right: 1%;
-		}
+    
+    .main-nav__item .main-nav__social-link {
+        display: none;
+    }
+    
+    .zvonok {
+        display: block;
+        margin-right: 1%;
+    }
 }
