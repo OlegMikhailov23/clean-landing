@@ -83,7 +83,7 @@ gulp.task('clean', function() {
 });
 
 gulp.task("img", function() {
-  return gulp.src("source/img/**/*.{png,jpg,gif}")
+  return gulp.src("source/img/**/*.{png,jpg,gif,svg}")
     .pipe(cache(imagemin([
         imagemin.optipng({optimizationLevel: 7}),
         imagemin.jpegtran({progressive: true})

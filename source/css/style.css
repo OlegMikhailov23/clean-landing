@@ -176,7 +176,7 @@
   width: 70px;
   height: 36px;
   font-size: 0;
-  background-color: #cfcfcf;
+  background-color: #ffffff;
   cursor: pointer;
   border: 1px solid #ffffff;
   outline: none;
@@ -199,12 +199,12 @@
   top: 8px;
   left: 17px;
   width: 36px;
-  height: 2px;
-  background-color: #ffffff;
-  -webkit-box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
-          box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
-  z-index: 1000;
-  border: 1px solid #ffffff;
+  height: 4px;
+  background-color: #000000;
+  -webkit-box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+          box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
 }
 .main-nav--closed .main-nav__toggle:active::before {
   background-color: rgba(255, 255, 255, 0.3);
@@ -220,11 +220,13 @@
 .main-nav--opened .main-nav__toggle::after {
   content: "";
   position: absolute;
-  top: 17px;
+  top: 15px;
   left: 18px;
   width: 26px;
-  height: 2px;
-  background-color: #ffffff;
+  height: 4px;
+  background-color: #000000;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
 }
 .main-nav--opened .main-nav__toggle::before {
   -webkit-transform: rotate(45deg);
@@ -260,7 +262,7 @@
 }
 .main-nav--opened .main-nav__wrapper {
   position: absolute;
-  height: 80vh;
+  height: auto;
   top: 0;
   right: 0;
   left: 70px;
@@ -301,8 +303,9 @@
 }
 .main-nav__item .main-nav__social-link {
   margin: 0 auto;
+  padding-top: 8px;
   width: 50%;
-  max-width: 200px;
+  min-width: 250px;
   min-height: 40px;
   text-align: center;
   border: 1px solid #ffffff;
@@ -321,7 +324,7 @@
   width: 30px;
   height: 80%;
   top: 10%;
-  left: 10px;
+  left: 13px;
   background-image: url("../img/whatsapp-logo.png");
   -webkit-background-size: 100% 100%;
           background-size: 100% 100%;
@@ -338,7 +341,7 @@
   width: 30px;
   height: 80%;
   top: 10%;
-  left: 10px;
+  left: 13px;
   background-image: url("../img/viber-logo.png");
   -webkit-background-size: 100% 100%;
           background-size: 100% 100%;
@@ -354,11 +357,11 @@
   position: absolute;
   width: 30px;
   height: 80%;
-  top: 13%;
-  left: 10px;
-  background-image: url("../img/vk.png");
-  -webkit-background-size: 85% 75%;
-          background-size: 85% 75%;
+  top: 11%;
+  left: 13px;
+  background-image: url("../img/vk-logo.svg");
+  -webkit-background-size: 100% 100%;
+          background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 @media (min-width: 800px) {
@@ -452,7 +455,10 @@
     text-transform: none;
     border-top: none;
     border-bottom: none;
-    font-weight: 400;
+    font-weight: bold;
+  }
+  .main-nav__item-active {
+    display: none;
   }
   .main-nav__item:hover::before {
     content: "";

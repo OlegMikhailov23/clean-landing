@@ -109,8 +109,8 @@
                         <ul class="main-nav__items">
                             <li class="main-nav__item  main-nav__item-active"><a>Главная</a></li>
                             <li class="main-nav__item"><a class="main-nav__item-ussual-link" href="#cena">Цены</a></li>
-                            <li class="main-nav__item"><a class="main-nav__item-ussual-link" href="#our-works">Наши работы</a></li>
-                            <li class="main-nav__item"><a class="main-nav__item-ussual-link" href="#our-workers">Наши работники</a></li>
+                            <li class="main-nav__item"><a class="main-nav__item-ussual-link" href="#our-works">Работы</a></li>
+                            <li class="main-nav__item"><a class="main-nav__item-ussual-link" href="#our-workers">Сотрудники</a></li>
                             <li class="main-nav__item"><a class="main-nav__item-ussual-link" href="#otziv">Отзывы</a></li>
                             <li class="main-nav__item"><a class="main-nav__item-ussual-link" href="#contakt">Контакты</a></li>
                             <li class="main-nav__item"><a class="main-nav__social-link main-nav__social-link-whatsup" href="https://api.whatsapp.com/send?phone=79110870304" title="Оценка стоимости по фото WhatsUP" target="_blank">WhatsUP</a></li>
