@@ -594,6 +594,7 @@
         </div>
         <h4 id="contakt" class="contakt">НАШИ <span class="zel">КОНТАКТЫ</span></h4>
     </main>
+    <!--
     <footer id="footer">
         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A36c35f8a1ea8cfaae01df38ca720639b595300cc6511271218963a9f4b024e01&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=true"></script>
         <div class="footer_right">
@@ -610,7 +611,7 @@
                 </p>
             </div>
         </div>
-    </footer>
+    </footer>-->
     <script src="js/minjs.js"></script>
 </body>
 
