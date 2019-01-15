@@ -78,8 +78,8 @@ gulp.task("minjs", function () {
         'source/js/owl.js',
         'source/js/main.js',
         'source/js/main1.js',
-        'source/js/footer-reveal.min.js'
-
+        'source/js/footer-reveal.min.js',
+        'source/js/preloader.js'
     ])// Берем все необходимые js файлы(перечисляем их)
         .pipe(concat("minjs.js")) // Собираем их в кучу в новом файле minjs.js
         .pipe(uglify()) // Сжимаем JS файл

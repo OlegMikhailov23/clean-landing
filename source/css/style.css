@@ -538,6 +538,12 @@
 .page-footer__menu {
   display: none;
 }
+.preload {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
 .nav a,
 .tel a,
 .zakaz_zvonok a,
