@@ -8,6 +8,9 @@ Thumbs.db
 *.ai
 *.pdf
 *.xml
-build/
+source/
 google842048bbc427e6f7.html
 .htaccess
+gulpfile.js
+package-lock.json
+package.json
