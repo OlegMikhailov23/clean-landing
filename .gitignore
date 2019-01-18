@@ -8,7 +8,7 @@ Thumbs.db
 *.ai
 *.pdf
 *.xml
-source/
+../source
 google842048bbc427e6f7.html
 .htaccess
 gulpfile.js
