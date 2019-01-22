@@ -310,11 +310,12 @@
 
 	.page-header {
 		display: flex;
+		flex-direction: row;
 		position: fixed;
 		min-height: 50px;
 		justify-content: center;
 	}
-
+	
 	.page-header__logo {
 		width: 60%;
 		justify-content: space-between;
@@ -382,10 +383,6 @@
 		font-weight: bold;
 	}
 	
-	.main-nav__item-active {
-		display: none;
-	}
-
 	.main-nav__item:hover::before {
 		content: "";
 		position: absolute;

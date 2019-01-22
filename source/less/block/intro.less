@@ -1,0 +1,116 @@
+@import "../variables.less";
+@import "../mixin.less";
+
+.intro {
+	background: url(../img/intro-bg-mobile.jpg) 100% 100% no-repeat;
+	background-size: 100% 100%;
+	background-position-x: left;
+	width: 100%;
+	height: 750px
+}
+
+.intro__title {
+	.zero-style();
+	.padding-left-right();
+	padding-top: 140px;
+	padding-bottom: 40px;
+	.font-size(40px, 45px);
+	color: #00b0ff;
+	text-shadow: 1px 1px 3px #000000;
+	font-weight: 700;
+	font-family: "PT Sans", Arial, sans-serif;
+}
+
+.intro__form-wrapper {
+	background: rgba(207, 207, 207, .4);
+	border-radius: 10px;
+	.padding-top-bottom(20px, 20px);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form__room-and-bath {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	& label {
+		margin-bottom: 20px;
+		width: 100%;
+	}
+}
+
+.form__intro-field {
+	.input-field();
+	border-radius: 5px;
+	text-align: center;
+	font-weight: 700;
+}
+
+.form__btn {
+	.padding-left-right (20px, 20px);
+	.padding-top-bottom (15px, 15px);
+	.font-size (18px, 30px);
+	text-transform: uppercase;
+	color: #ffffff;
+	background-color: @submit-btn-bg;
+	font-family: inherit;
+	border-radius: 10px;
+	outline: none;
+}
+
+.form__room-and-bath label {
+	position: relative;
+}
+
+.plus, .minus {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background: none;
+	border: none;
+	outline: none;
+	background-color: #cccccc;
+	border-radius: 50%;
+}
+
+.plus {
+	background-image: url("../img/addition-sign.svg");
+	background-size: 60%;
+	background-repeat: no-repeat;
+	background-position: center;
+	top: 10px;
+	right: 10px;
+}
+
+.minus {
+	background-image: url("../img/minus.svg");
+	background-size: 60%;
+	background-repeat: no-repeat;
+	background-position: center;
+	top: 10px;
+	left: 10px;
+}
+
+@media @tablet-widths {
+	.intro {
+		background-image: url(../img/intro-bg-tablet@1x.jpg);
+	}
+}
+
+@media @desktop-widths {
+	.intro {
+		background-image: url(../img/intro-bg-desktop@1x.jpg);
+	}
+	
+	.intro__form-wrapper {
+		background: rgba(207, 207, 207, 1);
+	}
+}
+
+
+
+
+
+
+
+
