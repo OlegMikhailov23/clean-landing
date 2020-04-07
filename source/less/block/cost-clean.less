@@ -1,0 +1,74 @@
+@import "../variables.less";
+@import "../mixin.less";
+
+.price-wrapper {
+	margin: 0 auto;
+}
+
+.price__item {
+    margin: 0 auto;
+    margin-bottom: 5%;
+	padding: 15px 30px;
+
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 10px;
+    overflow: hidden;
+    & .select-price-btn {
+    	width: 100%;
+    }
+    & img {
+    	//display: block;
+    	width: 100%;
+    	max-height: 200px;
+    }
+    & p {
+    	.zero-style();
+    	padding-top: 20px;
+    	padding-bottom: 20px;
+    	text-align: center;
+    	color: @main-font-color;
+    	font-family: inherit;
+    	font-size: 1rem;
+    }
+}
+
+
+
+.price__item-title {
+	display: block;
+	margin-bottom: 10px;
+
+	font-size: 20px;
+	line-height: 25px;
+	font-weight: 700;
+	font-family: inherit;
+	color: @light-blue-theme;
+}
+
+.price__item-cost {
+	display: block;
+	margin-bottom: 20px;
+
+	font-size: 30px;
+	line-height: 32px;
+	font-weight: 700;
+	font-family: inherit;
+	color: @header-color;
+}
+
+.price__item-cost-window {
+	text-align: center;
+}
+
+@media @desktop-widths {
+	.price__item-title {
+		font-size: 30px;
+		line-height: 32px
+	}
+
+	.price__item-cost {
+		font-size: 35px;
+		line-height: 37px
+	}
+}
+

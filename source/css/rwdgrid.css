@@ -4,11 +4,11 @@
     clear:both;
     float:inherit;
 }
-.container {
+.container-rwd {
     margin:0%;
     width: 100%;
 }
-.container:after, .container:before {
+.container-rwd:after, .container-rwd:before {
     display: table;
     clear:both;
     content: " ";
@@ -415,11 +415,6 @@
 }
  .FormaRight #btn_submit{
     font-size: 1em;
-}
- .blok1{
-    background: url('../img/back-main.jpg') no-repeat 100% 100% fixed;
-    background-size: 140% 100%;
-    background-position-x: left;
 }
 }
 @media only screen and (max-width:930px) {

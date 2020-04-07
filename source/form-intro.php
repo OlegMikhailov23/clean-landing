@@ -1,6 +1,6 @@
 <?
-if((isset($_POST['room-count'])&&$_POST['room-count']!="")&&(isset($_POST['bath-count'])&&$_POST['bath-count']!="")){ //Проверка отправилось ли наше поля name и не пустые ли они
-        $to = 'dkfolkin@gmail.com'; //Почта получателя, через запятую можно указать сколько угодно адресов
+if((isset($_POST['room-count-top'])&&$_POST['room-count-top']!="")&&(isset($_POST['bath-count-top'])&&$_POST['bath-count-top']!="")){ //Проверка отправилось ли наше поля name и не пустые ли они
+        $to = 'dkfolkin@gmail.com,anutapelipenko@gmail.com'; //Почта получателя, через запятую можно указать сколько угодно адресов
         $subject = 'Обратный звонок c Уборок'; //Загаловок сообщения
         $message = '
                 <html>
@@ -8,8 +8,8 @@ if((isset($_POST['room-count'])&&$_POST['room-count']!="")&&(isset($_POST['bath-
                         <title>'.$subject.'</title>
                     </head>
                     <body>
-                        <p><strong>Количество комнат:</strong> '.$_POST['room-count'].'</p>
-                        <p><strong>Количетсво санузлов:</strong> '.$_POST['bath-count'].'</p>
+                        <p><strong>Количество комнат:</strong> '.$_POST['room-count-top'].'</p>
+                        <p><strong>Количетсво санузлов:</strong> '.$_POST['bath-count-top'].'</p>
                         <p><strong>Телефон:</strong> '.$_POST['intro-form-tel'].'</p>
                     </body>
                 </html>'; //Текст нащего сообщения можно использовать HTML теги
