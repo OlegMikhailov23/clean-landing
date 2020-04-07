@@ -1,0 +1,34 @@
+@import "../variables.less";
+@import "../mixin.less";
+
+.bottom-form__wrapper {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.bottom-form__wrapper .row {
+	padding: 0;
+	margin: 0;
+}
+
+@media @tablet-widths {
+	.form__room-and-bath__bottom {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	
+	.form__room-and-bath__bottom label,
+	.form__room-and-bath__bottom .field-container {
+		width: 45%;
+	}
+	
+	.form__btn-bottom {
+		margin-bottom: 20px;
+		padding-top: 10px;
+		padding-bottom: 8px;
+		width: 45%;
+	}
+	
+}

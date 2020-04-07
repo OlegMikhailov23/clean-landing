@@ -27,8 +27,8 @@ jQuery(document).ready(function($){
 	    }
     });
     
-	//build the grid for the testimonials modal page
-	$('.cd-testimonials-all-wrapper').children('ul').masonry({
-  		itemSelector: '.cd-testimonials-item'
-	});
+// //build the grid for the testimonials modal page
+// 	$('.cd-testimonials-all-wrapper').children('ul').masonry({
+//   		itemSelector: '.cd-testimonials-item'
+// 	});	
 });

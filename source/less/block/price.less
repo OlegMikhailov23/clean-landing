@@ -1,0 +1,219 @@
+@import "../variables.less";
+@import "../mixin.less";
+
+.select-price {
+    margin-top: 30px;
+    position: relative;
+}
+
+.select-price__tabs-container {
+    margin-top: 30px;
+}
+
+.select-price {
+    background-color: #ffffff;
+}
+
+.select-price-btn {
+    .link-btn();
+    color: #ffffff;
+    .padding-left-right (15px, 15px);
+    .padding-top-bottom (15px, 15px);
+    .font-size (16px, 18px);
+    text-decoration: none !important;
+    min-height: 45px;
+}
+
+.select-price-btn-details {
+    background-color: transparent;
+    color: @submit-btn-bg;
+    font-weight: 700;
+}
+
+.select-price__title {
+    padding-top: 30px;
+    text-align: center;
+    .font-size(35px, 36px);
+    margin-bottom: 30px;
+    color: @submit-btn-bg;
+}
+
+.select-price__article {
+    .padding-left-right(5%, 5%);
+
+    .zero-style();
+    .font-size(22px, 24px);
+    text-align: center;
+}
+
+.tabcontent__item {
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    padding: 4%;
+    box-shadow: 0 0 3px 1px #cccccc;
+    margin-bottom: 20px;
+
+    &:hover {
+        box-shadow: none;
+        transition: 0.5s;
+    }
+}
+
+.tabcontent__item-picture {
+    position: relative;
+    margin-bottom: 20px;
+
+    & img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        min-height: 235px;
+    }
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    background: #202242;
+}
+
+
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 16px;
+    transition: 0.3s;
+    border-color: #ffffff;
+    font-size: 0.9em;
+    font-family: inherit;
+    font-weight: 400;
+
+    &:hover {
+        color: @submit-btn-bg;
+    }
+}
+
+.button-container {
+    .padding-left-right(0, 0);
+}
+
+.select-price__tab-header {
+    color: #ffffff;
+    font-weight: bold;
+    .font-size(18px, 24px);
+    letter-spacing: 0.5px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: rgba(207, 207, 207, 0.5);
+    transition: 0.3s;
+}
+
+/* Create an active/current tablink class */
+.tabs-container {
+    margin: 0;
+    padding: 0;
+}
+
+.tab button.active {
+    background-color: rgba(207, 207, 207, 0.5);
+    color: #ffffff;
+    background-color: @submit-btn-bg;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 16px 30px;
+    border-top: none;
+}
+
+.tabcontent__title {
+    .zero-style();
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.tabcontent {
+    animation: fadeEffect 1s;
+    /* Fading effect takes 1 second */
+}
+
+.tabcontent__item-sub-description {
+    color: @main-font-color;
+    font-style: italic;
+}
+
+.select-price__btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.select-price__price-list {
+    .zero-style();
+}
+
+.select-price__price-list-item {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 25px;
+    color: #000000;
+    .font-size(16px, 18px);
+
+    &::before {
+        .before-elem();
+        width: 13px;
+        height: 13px;
+        top: 2px;
+        background-color: @submit-btn-bg;
+        border-radius: 50%;
+        border: 2px solid #000000;
+        box-shadow: 0 0 3px 1px #cccccc;
+    }
+}
+
+.select-price__price {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-weight: 700;
+    color: #202242;
+    .font-size(28px, 25px);
+
+    & sup {
+        top: -.2em;
+    }
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media @tablet-widths {
+    .select-price__article {
+        .padding-left-right(15%, 15%);
+    }
+
+    .tab button {
+        padding: 14px 16px;
+        font-size: 1em;
+        font-weight: 700;
+    }
+
+    
+}

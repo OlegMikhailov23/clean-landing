@@ -1,0 +1,146 @@
+@import "../variables.less";
+@import "../mixin.less";
+
+.select-clean__tabs-container {
+	margin-top: 30px;
+}
+
+.select-clean {
+	background-color: #e7ebfc;
+}
+
+.select-clean-btn {
+	text-align: center;
+}
+
+.select-clean__title {
+	padding-top: 30px;
+	text-align: center;
+	.font-size(35px, 36px);
+	margin-bottom: 30px;
+}
+
+.select-clean__article {
+	.padding-left-right(5%, 5%);
+	.zero-style();
+	.font-size(22px, 24px);
+	text-align: center;
+}
+
+/* Style the tab */
+.tab {
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background: linear-gradient(to bottom, #049aff, #86c5ff);
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+}
+
+.button-container {
+	.padding-left-right(0, 0);
+	border-radius: 5px;
+	//box-shadow: 0 1px 3px 1px #cccccc;
+}
+
+.select-clean__tab-header {
+	color:#ffffff;
+	font-weight: bold;
+	.font-size(18px, 24px);
+	letter-spacing: 0.5px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+	background-color: rgba(207, 207, 207, 0.5);
+	transition: 0.3s;
+}
+
+/* Create an active/current tablink class */
+.tabs-container {
+	margin: 0;
+	padding: 0;
+}
+
+.tab button.active {
+	background-color: rgba(207, 207, 207, 0.5);
+}
+
+/* Style the tab content */
+.tabcontent {
+	display: none;
+	padding: 16px 30px;
+	border-top: none;
+}
+
+.tabcontent__title {
+	.zero-style();
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.tabcontent {
+	animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+.select-clean__btn-container {
+	display: flex;
+	justify-content: center;
+}
+
+.select-clean__clean-list {
+	.zero-style();
+}
+
+.select-clean__clean-list-item {
+	position: relative;
+	margin-bottom: 20px;
+	padding-left: 25px;
+	color: #000000;
+	.font-size(18px;22px);
+	&::before {
+		.before-elem();
+		width: 13px;
+		height: 13px;
+		top: 5px;
+		background-color: #049aff;
+		border-radius: 50%;
+		border: 2px solid #cccccc;
+		box-shadow: 0 0 3px 1px #cccccc;
+	}
+}
+
+.select-clean__price {
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	font-weight: 700;
+	color: @light-blue-theme;
+	.font-size(28px, 30px);
+}
+
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@media @tablet-widths {
+	.select-clean__article {
+		.padding-left-right(15%, 15%);
+	}
+}

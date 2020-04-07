@@ -1,0 +1,36 @@
+@import "../variables.less";
+
+@import "../mixin.less";
+
+.whatsup-widget {
+	display: none;
+	position: fixed;
+	bottom: 10%;
+	right: 5%;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	background-color: #00c5a8;
+	background-image: url("../img/whatsapp-logo.png");
+	background-size: 75% 75%;
+	background-repeat: no-repeat;
+	background-position: center;
+	.box-shadow();
+	font-size: 0;
+	z-index: 990;
+	&:hover {
+		background-color: #03fbd6;
+		transition: 0.3s;
+	}
+}
+
+.tada {
+	animation-iteration-count: infinite;
+}
+
+@media @tablet-widths {
+	.whatsup-widget {
+		width: 65px;
+	height: 65px;
+	}
+}

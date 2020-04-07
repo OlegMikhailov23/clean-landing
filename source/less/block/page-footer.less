@@ -2,274 +2,401 @@
 
 @import "../mixin.less";
 
+.page-footer {
+    background-color: #222222;
+}
+
 .page-footer__wrapper {
-	width: 100%;
-	background-color: #222222;
-	padding-top: 30px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 30px;
 }
 
 .page-footer__footer-logo {
-	width: 170px;
-	margin: 0 auto;
-	margin-bottom: 20px;
+    width: 170px;
+    margin: 0 auto;
+    margin-bottom: 20px;
 
-	& .page-footer__footer-logo-link {
-		display: block;
-		.size (170px, 55px);
-		background: url("../img/transplogo.png") no-repeat;
-		font-size: 0;
-		background-size: 100%;
-	}
+    & .page-footer__footer-logo-link {
+        display: block;
+        .size (170px, 55px);
+        background: url("../img/newLogoCleanProfit-V2-footer.svg") no-repeat;
+        font-size: 0;
+        background-size: 100%;
+    }
 }
 
 .page-footer__develop span {
-	.font-size (14px, 18px);
-	color: #000000;
-	font-family: inherit;
+    .font-size (14px, 18px);
+    color: #000000;
+    font-family: inherit;
 }
 
 .page-footer__social-links {
-	display: flex;
-	margin: 0 auto;
-	flex-direction: column;
-	font-size: 0;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    font-size: 0;
 
-	& b {
-		padding-bottom: 5%;
-		font-size: 18px;
-		line-height: 20px;
-		font-family: inherit;
-		color: #a6a6a6;
-		font-weight: 400;
-		text-align: center;
-	}
+    & b {
+        padding-bottom: 5%;
+        font-size: 18px;
+        line-height: 20px;
+        font-family: inherit;
+        color: #a6a6a6;
+        font-weight: 400;
+        text-align: center;
+    }
+}
+
+.page-footer__services-list--desktop {
+    display: none;
+}
+
+.page-footer__services-list--desktop b {
+    padding-bottom: 5%;
+        font-size: 18px;
+        line-height: 20px;
+        font-family: inherit;
+        color: #a6a6a6;
+        font-weight: 400;
+        text-align: center;
 }
 
 .page-footer__social-links .page-footer__social-link {
-	margin: 0 auto;
-	padding-top: 8px;
-	min-width: 250px;
-	min-height: 40px;
-	text-align: center;
-	border: 1px solid #ffffff;
-	border-radius: 20px;
-	margin-bottom: 3%;
-	font-family: inherit;
-	font-size: 18px;
-	line-height: 20px;
-	color: #ffffff;
-	text-decoration: none;
+    margin: 0 auto;
+    padding-top: 8px;
+    min-width: 250px;
+    min-height: 40px;
+    text-align: center;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    margin-bottom: 3%;
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 20px;
+    color: #ffffff;
+    text-decoration: none;
 
+    &:hover {
+        border-color: #000000;
+        transition: 0.3s;
+    }
+
+    &:active {
+        opacity: 0.4;
+    }
+}
+
+.page-footer__develop {
+    text-align: center;
+    padding-top: 45px;
+
+    & a {
+        cursor: pointer;
+    }
+}
+
+.page-footer__link-vk {
+    position: relative;
+    background-color: #35659a;
+}
+
+.page-footer__link-vk::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 80%;
+    top: 11%;
+    left: 13px;
+    background-image: url("../img/vk-logo.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.page-footer__link-inst {
+    position: relative;
+    background: linear-gradient(to bottom, #be00b5, #f6bb41);
+}
+
+.page-footer__link-inst::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 80%;
+    top: 11%;
+    left: 13px;
+    background-image: url("../img/instagram.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.page-footer__link-whatsup {
+    position: relative;
+    background-color: #00c5a8;
+}
+
+.page-footer__link-whatsup::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 80%;
+    top: 10%;
+    left: 13px;
+    background-image: url("../img/whatsapp-logo.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.page-footer__link-viber {
+    position: relative;
+    background-color: #6f51aa;
+}
+
+.page-footer__link-viber::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 80%;
+    top: 10%;
+    left: 13px;
+    background-image: url("../img/viber-logo.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.page-footer__copyright {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #a6a6a6;
+    background-color: #222222;
+    border-top: 1px solid #cccccc;
+}
+
+.page-footer__develop a {
+    display: inline-block;
+    vertical-align: text-bottom;
+    width: 30px;
+    height: 35px;
+    font-size: 0;
+    background-image: url("../img/develop.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.page-footer__develop span {
+    position: relative;
+    bottom: 8px;
+}
+
+.page-footer__copyright a {
+    color: #a6a6a6;
+    display: inline-block;
+    &:hover {
+    	text-decoration: underline;
+    }
+}
+
+.tel-footer {
+    padding-left: 15px;
+}
+
+.page-footer__menu {
+    display: none;
+}
+
+//this is footer accordion
+.page-footer__accordion-container {
+	margin-top: 20px;
+	margin-bottom: 20px;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.page-footer__accordion-btn {
+    position: relative;
+    background-color: transparent;
+    color: #a6a6a6;
+    cursor: pointer;
+    padding: 10px 10% 10px 3%;
+    // padding-right: 55px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    .font-size(1rem, 14px);
+    letter-spacing: 0.5px;
+    transition: 0.4s;
+    border: none;
+    border-bottom: 1px solid #a6a6a6;
+}
+
+.page-footer__accordion-btn:nth-child(1) {
+	border-top: 1px solid #a6a6a6;
+}
+
+.page-footer__accordion-container .active-accordion, .page-footer__accordion-btn:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+	color: #ffffff;
+	transition: 0.4s;
+}
+//arrow
+.page-footer__accordion-btn:after {
+	.before-elem();
+	left: auto;
+	right: 2%;
+	top: 12px;
+	width: 12px;
+	height: 12px;
+	background-image: url("../img/left-angle-bracket-light.svg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	transform: rotate(-90deg);
+	transition: 0.4s;
+}
+//arrow
+.page-footer__accordion-btn__panel {
+	padding: 0 5%;
+	background-color: transparent;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+
+.page-footer__accordion-list {
+	.zero-style();
+	& li {
+		display: block;
+		margin-bottom: 0.5em;
+		margin-top: 0.5em;
+		.zero-style();
+	}
+}
+
+.page-footer__accordion-link {
+	.zero-style();
+	box-sizing: content-box;
+	// display: block;
+	// padding: 5%;
+	color: #a6a6a6;
+	.font-size(1em, 14px);
+	letter-spacing: 0.5px;
+	border-bottom: 1px solid transparent;
 	&:hover {
-		border-color: #000000;
+		border-bottom: 1px solid #a6a6a6;
+		color: #ffffff;
 		transition: 0.3s;
 	}
 
 	&:active {
-		opacity: 0.4;
+		border-bottom: none;
+		color: #a6a6a6;
+		transition: 0.3s;
 	}
 }
 
-.page-footer__develop {
-	text-align: center;
-	padding-top: 45px;
+//this is footer accordion
 
-	& a {
-		cursor: pointer;
-	}
-}
+@media @desktop-widths {
+    
+    .page-footer__wrapper {
+        width: 90%;
+    }
 
-.page-footer__link-vk {
-	position: relative;
-	background-color: #35659a;
-}
+    .page-footer__wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 0;
+        .padding-left-right (40px, 40px);
+        .padding-top-bottom (35px, 35px);
+    }
 
-.page-footer__link-vk::before {
-	content: "";
-	display: block;
-	position: absolute;
-	width: 30px;
-	height: 80%;
-	top: 11%;
-	left: 13px;
-	background-image: url("../img/vk-logo.svg");
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-}
+    .page-footer__accordion-container {
+        display:none;
+    }
 
-.page-footer__link-inst {
-	position: relative;
-	background: linear-gradient(to bottom, #be00b5, #f6bb41);
-}
+    .page-footer__services-list--desktop {
+        display: block;
+        order: 4;
+    }
 
-.page-footer__link-inst::before {
-	content: "";
-	display: block;
-	position: absolute;
-	width: 30px;
-	height: 80%;
-	top: 11%;
-	left: 13px;
-	background-image: url("../img/instagram.svg");
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-}
+    .page-footer__social-links {
+        order: 1;
+        margin: 0;
+        border: none;
+        border-right: 1px solid #cccccc;
+        padding-right: 30px;
+    }
 
-.page-footer__link-whatsup {
-	position: relative;
-	background-color: #00c5a8;
-}
+    .page-footer__footer-logo {
+        order: 5;
+        align-self: center;
+    }
 
-.page-footer__link-whatsup::before {
-	content: "";
-	display: block;
-	position: absolute;
-	width: 30px;
-	height: 80%;
-	top: 10%;
-	left: 13px;
-	background-image: url("../img/whatsapp-logo.png");
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-}
+    .page-footer__develop {
+        order: 4;
+        align-self: flex-end;
+    }
 
-.page-footer__link-viber {
-	position: relative;
-	background-color: #6f51aa;
-}
+    .page-footer__footer-logo {
+        margin: 0;
+    }
 
-.page-footer__link-viber::before {
-	content: "";
-	display: block;
-	position: absolute;
-	width: 30px;
-	height: 80%;
-	top: 10%;
-	left: 13px;
-	background-image: url("../img/viber-logo.png");
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-}
+    .page-footer__develop {
+        margin: 0;
+        padding: 0;
+        align-self: flex-end;
+    }
 
-.page-footer__copyright {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	text-align: center;
-	color: #a6a6a6;
-	background-color: #222222;
-	border-top: 1px solid #cccccc;
-}
+    .page-footer__menu span {
+        padding-bottom: 5%;
+        font-size: 18px;
+        line-height: 20px;
+        font-family: inherit;
+        color: #a6a6a6;
+        font-weight: 400;
+        text-align: center;
+    }
 
-.page-footer__develop a {
-	display: inline-block;
-	vertical-align: text-bottom;
-	width: 30px;
-	height: 35px;
-	font-size: 0;
-	background-image: url("../img/develop.png");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-}
+    .page-footer__menu {
+        display: block;
+        order: 2;
 
-.page-footer__develop span {
-	position: relative;
-	bottom: 8px;
-}
+        & ul {
+            .zero-style();
+            padding-top: 20px;
 
-.page-footer__copyright a {
-	color: #a6a6a6;
-	display: inline-block;
-}
+            & li {
+                .zero-style();
+                margin-bottom: 10px;
+            }
+        }
+    }
 
-.tel-footer {
-	padding-left: 15px;
-}
-
-.page-footer__menu {
-	display: none;
+    .page-footer__menu a {
+        font-size: 18px;
+        line-height: 25px;
+        color: #a6a6a6;
+		border-bottom: 1px solid transparent;
+        &:hover {
+            color: #ffffff;
+            transition: 0.3s;
+            border-bottom: 1px solid #cccccc;
+        }
+    }
 }
 
 @media @desktop-widths {
-	.page-footer__wrapper {
-		position: relative;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		flex-wrap: wrap;
-		margin-top: 0;
-		.padding-left-right (40px, 40px);
-		.padding-top-bottom (35px, 35px);
-	}
-
-	.page-footer__social-links {
-		order: 1;
-		margin: 0;
-		border: none;
-		border-right: 1px solid #cccccc;
-		padding-right: 30px;
-	}
-
-	.page-footer__footer-logo {
-		order: 3;
-		align-self: center;
-	}
-
-	.page-footer__develop {
-		order: 4;
-		align-self: flex-end;
-	}
-
-	.page-footer__footer-logo {
-		margin: 0;
-	}
-
-	.page-footer__develop {
-		margin: 0;
-		padding: 0;
-		align-self: flex-end;
-	}
-
-	.page-footer__menu span {
-		padding-bottom: 5%;
-		font-size: 18px;
-		line-height: 20px;
-		font-family: inherit;
-		color: #a6a6a6;
-		font-weight: 400;
-		text-align: center;
-	}
-
-	.page-footer__menu {
-		display: block;
-		order: 2;
-
-		& ul {
-			.zero-style();
-			padding-top: 20px;
-
-			& li {
-				.zero-style();
-				margin-bottom: 10px;
-			}
-		}
-	}
-
-	.page-footer__menu a {
-		font-size: 18px;
-		line-height: 25px;
-		color: #a6a6a6;
-
-		&:hover {
-			color: #ffffff;
-			transition: 0.3s;
-			border-bottom: 1px solid #cccccc;
-		}
-	}
-}
-
-@media @desktop-widths {
-	.page-footer__wrapper {
-		margin: 0 auto;
-	}
+    .page-footer__wrapper {
+        margin: 0 auto;
+    }
 }

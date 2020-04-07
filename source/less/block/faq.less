@@ -1,0 +1,102 @@
+@import "../variables.less";
+@import "../mixin.less";
+
+.faq__wrapper {
+	margin-bottom: 30px;
+}
+
+.faq__wrapper h2 {
+	padding-top: 40px;
+}
+
+.faq__accordion-container {
+	margin: 0 auto;
+	width: 100%;
+}
+
+.accordion {
+	position: relative;
+	background-color: #ffffff;
+	color: #000000;
+	cursor: pointer;
+	padding: 18px;
+	padding-right: 55px;
+	width: 100%;
+	text-align: left;
+	outline: none;
+	.font-size(22px, 24px);
+	transition: 0.4s;
+	border: none;
+	border-bottom: 1px solid @light-blue-theme;
+}
+
+.accordion:nth-child(1) {
+	border-top: 1px solid @light-blue-theme;
+}
+
+.active-accordion, .accordion:hover {
+	background-color: @light-blue-theme;
+	color: #ffffff;
+	transition: 0.4s;
+}
+
+.accordion:after {
+	.before-elem();
+	left: auto;
+	right: 20px;
+	top: 15px;
+	width: 30px;
+	height: 30px;
+	background-image: url("../img/left-angle-bracket.svg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	transform: rotate(-90deg);
+}
+
+.active-accordion:after {
+	transform: rotate(90deg);
+}
+
+.accordion:hover:after {
+	color: #ffffff;
+	transition: 0.4s;
+}
+
+
+.panel {
+	padding: 0 18px;
+	background-color: @section-background;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+
+.faq__article {
+	.zero-style();
+	padding: 20px;
+	color: #000000;
+	.font-size(18px, 20px);
+	letter-spacing: 0.5px;
+	& a {
+		padding-left: 2px;
+		padding-right: 2px;
+		background-color: #ffffff;
+		text-decoration: none;
+		border: 1px solid #cccccc;
+		border-radius: 8px;
+		color: @main-font-color;
+	}
+	& a:hover {
+		background-color: @light-blue-theme;
+		color: #ffffff;
+		transition: 0.3s;
+	}
+}
+
+
+@media @tablet-widths {
+	.faq__accordion-container {
+		width: 70%;
+	}
+}

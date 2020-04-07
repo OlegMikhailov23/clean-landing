@@ -1,0 +1,44 @@
+@import "../variables.less";
+
+@import "../mixin.less";
+
+.sub-nav__wrapper {
+	background-color: #ffffff;
+}
+
+.sub-nav__list {
+	.zero-style();
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.sub-nav__list-link {
+	display: block;
+	.padding-top-bottom(10px, 2px);
+	.font-size(18px,20px);
+	font-weight: 700;
+	color: #000000;
+	border-bottom: 1px solid #cccccc;
+	letter-spacing: 0.5px;
+	&:hover {
+		color: @light-blue-theme;
+		border-bottom: 1px solid @light-blue-theme;
+		transition: 0.3s;
+	}
+}
+
+@media @tablet-widths {
+	.sub-nav__list {
+		display: flex;
+		padding-bottom: 30px;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		border-bottom: 1px solid #cccccc;
+	}
+	
+	.sub-nav__list-item {
+		margin-right: 20px;
+		align-self: center;
+	}
+}

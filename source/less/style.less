@@ -4,6 +4,46 @@
 
 @import "preload.less";
 
+@import "block/intro.less";
+
+@import "block/sub-nav.less";
+
+@import "block/advantages.less";
+
+@import "block/select-clean.less";
+
+@import "block/select-clean-mode.less";
+
+@import "block/feedbacks.less";
+
+@import "block/faq.less";
+
+@import "block/seo.less";
+
+@import "block/form-bottom.less";
+
+@import "block/modal-window.less";
+
+@import "block/whatsup-widget.less";
+
+@import "block/price.less";
+
+@import "block/cost-clean.less";
+
+@import "block/calculator-wash.less";
+
+@import "block/buy-btn.less";
+
+@import "block/carpet-calc.less";
+
+@import "block/equipment.less";
+
+@import "block/before-after.less";
+
+main {
+  background: #ffffff;
+}
+
 .nav a,
 .tel a,
 .zakaz_zvonok a,
@@ -143,26 +183,30 @@ nav ul {
     transition: .2s
 }
 
+.zvonok {
+    margin-right: 0% !important;
+}
+
 .zakaz_zvonok {
-    margin-top: 13px
+   height: 100%;
 }
 
 .zakaz_zvonok a {
     display: block;
     color: #fff;
-    padding: 5px 5px;
-    font-size: 1em;
+    padding: 15px 18px;
+    font-size: 1.2em;
     transition: .3s;
-    border-radius: 5px;
-    background-color: #ff0030;
+    background-color: @submit-btn-bg;
     width: auto;
+    height: 100%;
+    cursor: pointer;
 }
 
 .zakaz_zvonok a:hover {
     background: #00ff8c;
     color: #fff;
     transition: .3s;
-    border: 1px solid #fff
 }
 
 #footer {
@@ -197,24 +241,67 @@ nav ul {
     height: 750px
 }
 
+main .blok1__intro-carpet {
+    background-image: url(../img/carpet-intro-v2.jpg);
+    background-size: 100% 100%;
+    background-position-x: left;
+    width: 100%;
+    height: 750px
+}
+
+@media @tablet-widths {
+  main .blok1__intro-carpet {
+    background-image: url(../img/carpet-intro-tablet.jpg);
+  }
+}
+
+@media (min-width: 1050px) {
+  .blok1 {
+    background-size: 100% 100%;
+  }
+}
+
+@media @desktop-widths {
+  main .blok1__intro-carpet {
+    background-image: url(../img/carpet-intro-desktop-v2.jpg);
+  }
+
+  .blok1 {
+    background-size: 100% 100%;
+  }
+}
+
 .speech-container {
     position: absolute;
     top: 100px;
     width: 90%;
     margin-left: 5%;
     color: #000;
-    padding: 50px 15px;
+    padding: 0px 15px;
     text-align: center;
     font-size: 1.5em;
     color: #00b0ff;
     letter-spacing: 3px;
     text-shadow: 1px 1px 3px #000000;
+    & h1 {
+        font-size: 1.2em;
+    }
+}
+
+@media @tablet-widths {
+  .speech-container {
+    padding-top: 2%;
+    font-size: 1.7em;
+  }
 }
 
 .under-speech {
-    color: #000000;
-    text-shadow: 0px 0px 2px #f2f2f2;
+  display: block;
+  margin: 0 auto;
+    color: #ffffff;
+    // text-shadow: 0px 0px 2px #f2f2f2;
     font-weight: 700;
+    max-width: 380px;
 }
 
 .under-speech::before {
@@ -276,10 +363,12 @@ nav ul {
     top: 380px;
     width: 60%;
     margin-left: 30%;
-    background: rgba(207, 207, 207, .9);
+    background: rgba(207, 207, 207, 0.5);
+    border-radius: 10px;
     color: #000;
+    font-weight: 700;
     padding: 20px 15px;
-    box-shadow: 0 0 16px 0 #000
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .messages,
@@ -293,13 +382,18 @@ nav ul {
 }
 
 .FormaRight strong {
-    font-size: 19px;
+    font-size: 1.5rem;
     color: #f0626e
 }
 
 .FormaRight p {
-    font-size: 1em;
-    margin-top: 15px
+    display: block;
+    margin: 0 auto;
+    font-size: 1.2em;
+    width: 80%;
+    text-align: center;
+    margin-top: 8px;
+    text-shadow: 0px 0px 2px #f2f2f2;
 }
 
 .blok2 {
@@ -315,6 +409,43 @@ nav ul {
     color: #111;
     border-radius: 5px
 }
+
+.FormaRight .form__intro-field--name {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.prefix-container {
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: nowrap;
+  margin-bottom: 9px;
+  width: 70%;
+  background-color: #ffffff;
+  margin: 0 auto;
+  border: 1px solid #858888;
+  border-radius: 5px
+}
+
+.tel-prefix {
+  width: 20%;
+  padding-top: 14px;
+  .font-size(20px, 22px);
+  font-weight: 400;
+  border-right: 1px solid #858888;
+  text-align: center;
+}
+
+.FormaRight .form__intro-field--prefix {
+  width: 80%;
+  margin-left: 0;
+  margin-top: 0;
+  border: none;
+  text-align: left;
+}
+
+
 
 .FormaRight #btn_submit {
     background: #e93746;
@@ -366,7 +497,7 @@ nav ul {
     z-index: 9999;
     background: #049aff;
     font-size: 1.3em;
-    color: #fff
+    color: #fff;
 }
 
 .messages a {
@@ -407,6 +538,7 @@ nav ul {
     margin-left: -15%;
     z-index: 9999;
     background: #049aff;
+    animation: bounce 0.3s;
 }
 
 #my-contact-formZv p {
@@ -500,6 +632,177 @@ main {
     margin-top: 60px
 }
 
+.how-we-do {
+    background-color: @section-background;
+    & h5 {
+      margin-top: 0;
+    }
+}
+
+.how-we-do__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  min-height: 350px;
+}
+
+.how-we-do__title-uppercase {
+  padding: 0;
+  margin: 0;
+  .font-size(24px, 26px);
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.how-we-do__article {
+  .font-size(24px, 28px)
+}
+
+.how-we-do__video-container {
+  padding-top: 5px;
+  height: auto;
+  & video{
+    display: block;
+    width: 100%;  
+  }
+}
+
+.how-we-do__process-list {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+  .zero-style();
+  display: block;
+  width: 100%;
+  
+  .font-size(18px, 20px);
+  color: @light-blue-theme;
+  
+  margin: 0 auto;
+  text-align: left;
+  
+  & .process__list-item {
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+  }
+}
+
+.process__list-item::before {
+  .before-elem();
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/correct.svg");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 3px;
+}
+
+.process__pic-container {
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 180px;
+  height: 180px;
+  border-radius: 55%;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.seo__wash-article {
+  padding-bottom: 20px;
+}
+
+.text_blok2 h3 {
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 90%;
+}
+
+@media @tablet-widths {
+    .how-we-do__container {
+      flex-direction: row;
+      .padding-left-right(50px, 50px);
+    }
+
+    .how-we-do__title {
+      width: 50%;
+    }
+
+    .how-we-do__video-container {
+      padding-top: 0;
+      width: 100%;
+      margin-left: 20px;
+    }
+
+    .seo__wash-article {
+      padding-top: 50px; 
+      padding-bottom: 50px;
+      padding-left: 300px;
+      min-height: 200px;
+    }
+
+    .process__pic-container {
+      position: absolute;
+      top: 0;
+      left: 10%;
+    }
+    
+    .how-we-do__sub-title {
+      padding-left: 300px;
+      font-size: 1.5em;
+      font-weight: 700;
+    }
+
+    .process__list-item-v2::before {
+        width: 40px;
+        height: 40px;
+        background-image: url("../img/correct.svg");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        top: -7px;
+        left: 270px;
+    }
+
+    .text_blok2 h3 {
+      font-size: 1.5em;
+      width: 60%;
+      text-align: center;
+    }
+
+    .seo__foto-container {
+      max-height: 500px;
+    }
+
+    .seo__foto-container .foto_blok2 {
+      width: 60%;
+      margin: 0 auto;
+      & img {
+        height: 450px;
+      }
+    }
+
+    .text_blok2 p {
+      width: 80%;
+      margin: 0 auto;
+      padding-bottom: 40px;
+    }
+
+    .how-we-do__process-list {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .how-we-do__process-list-bottom {
+      margin-bottom: 20px;
+    }
+}
+
 /*Стили блока "наши работники*/
 
 .our-workers__unit-container {
@@ -507,7 +810,7 @@ main {
 		flex-direction: column;
 		margin: 5%;
 		border: 1px solid rgb(217, 217, 217);
-		border-radius: 5%;
+		border-radius: 20px;
 		overflow: hidden;
 		box-shadow: 0 0 3px 1px #cccccc;
 }
@@ -515,6 +818,10 @@ main {
 .our-workers {
 		margin-top: 10%;
 		margin-bottom: 5%;
+}
+
+.clean-workers .our-workers {
+    margin-top: 5%;
 }
 
 .our-workers h4 {
@@ -675,67 +982,28 @@ main {
    transition: 0.4s;
 }
 
-/*
-.opepator {
-    padding: 30px 20px;
-    float: left;
-    width: 40%
-}
-*/
-
 .foto_blok2,
 .text_blok2 {
     width: 80%;
     margin-left: 10%;
 }
 
-/*
-.opepator img {
-    border-radius: 170px;
-    box-shadow: 0 0 8px 0 #000
+.foto_blok2 {
+  margin: 0 auto;
+  padding-bottom: 2%;
+  & img {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
-.voprosi {
-    padding: 40px 20px
+.text_blok2 .seo__wash-article {
+  color: #000000;
+  font-size: 0.9em;
 }
 
-.voprosi h6 {
-    font-size: 2.7em;
-    color: #fff;
-    margin-top: 10px
-}
 
-.voprosi p,
-.voprosi span {
-    margin-top: 40px
-}
-
-.voprosi a {
-    color: #fff
-}
-
-.voprosi__tellink {
-    border-bottom: 4px solid #fff
-}
-
-.voprosi span {
-    font-size: 1.7em;
-    font-weight: 600;
-    color: #fff;
-    cursor: pointer;
-    padding: 15px 25px;
-    border-radius: 50px;
-    background: #e93746;
-    box-shadow: 0 0 10px 0 #000;
-    transition: .5s
-}
-
-.voprosi span:hover {
-    transition: .5s;
-    background: #f0626e;
-    box-shadow: 0 0 3px 0 #000
-}
-*/
 .zel {
     color: #049aff
 }
@@ -743,11 +1011,15 @@ main {
 .text_blok2 p {
     margin-top: 10px;
     line-height: 1.3;
-    font-size: 1.2em
+    font-size: 1.2em;
+}
+
+.text_blok2 {
+  float: left;
 }
 
 .foto_blok2 {
-    margin-top: 30px
+    margin-top: 30px;
 }
 
 .blok3 h3,
@@ -1022,21 +1294,6 @@ main {
     }
 }
 
-.СозданиеСайтов img:hover {
-    -webkit-transition: .6s;
-    -ms-transition: .6s;
-    transition: .6s;
-    box-shadow: 0 0 7px 0 #000;
-    -webkit-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg)
-}
-
-.СозданиеСайтов a {
-    color: #111;
-    text-decoration: none
-}
-
 .contakt {
     text-align: center;
     padding: 20px 10px;
@@ -1106,6 +1363,18 @@ main {
 
 #my-contact-formFT #btn_submit:hover {
     background: #ff7c7c
+}
+
+.submit-btn {
+    background: #e93746;
+    border: none;
+    color: #fff !important;
+    font-size: 1.3em;
+    border-radius: 50px;
+    padding: 10px 13px;
+    &:hover {
+      background: #ff7c7c
+    }
 }
 
 .messagesFT {
@@ -1207,6 +1476,8 @@ main {
     font-size: 1.2em
 }
 
+
+
 .usluga_opis .cena {
     font-size: 1.6em;
     font-weight: 600
@@ -1237,16 +1508,12 @@ main {
 
 .carpet-machine {
   margin-top: 30px;
-  width: 100% !important;
 }
 
 .carpet-machine img {
     margin-bottom: 10px;
-    width: 300px;
-    height: 300px;
     margin-left: 10%;
     margin-right: 5%;
-    float: left;
 }
 
 .carpet-machine h6 {

@@ -1,0 +1,347 @@
+@import "../variables.less";
+
+@import "../mixin.less";
+
+.modal-content {
+    display: none;
+    animation: modal-bounce 0.3s;
+}
+
+.modal-content {
+    position: fixed;
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 25px;
+    top: 15%;
+    border-radius: 10px;
+    background-color: #f8f7f4;
+    z-index: 1003;
+}
+
+.success-message {
+  display: none;
+  position: fixed;
+  text-align: left;
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 25px;
+  top: 15%;
+  border-radius: 10px;
+  background-color: #f8f7f4;
+  z-index: 1002;
+  animation: modal-bounce 0.3s;
+  & p {
+    text-align: center;
+    font-size: 1.4em;
+      
+  }
+}
+
+.modal-content-show {
+    display: block;
+    animation: modal-bounce 0.3s;
+}
+
+.modal-error {
+    animation: shake 0.6s;
+}
+
+.modal-content .feedback-form {
+    position: relative;
+}
+
+.modal-content p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 18px;
+    font-size: 1.3em;
+    line-height: 28px;
+    font-family: inherit;
+    color: @main-font-color;
+}
+
+.modal-content label {
+    font-size: 1em;
+    line-height: 13px;
+    color: #6699cc;
+}
+
+.modal-content .half-width {
+    width: 100%;
+    height: 44px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.modal-content input,
+.modal-content textarea {
+    display: block;
+    border: 1px solid #d3d3d2;
+    border-radius: 3px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #333333;
+    outline: none;
+}
+
+.modal-content input:hover,
+.modal-content textarea:hover {
+    border-color: #6699cc;
+}
+
+.modal-content input:focus,
+.modal-content textarea:focus {
+    border-color: #6699cc;
+}
+
+.modal-content input:focus::-webkit-input-placeholder,
+.modal-content textarea:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.modal-content input:focus::-moz-placeholder,
+.modal-content textarea:focus::-moz-placeholder {
+    color: transparent;
+}
+
+.modal-content input:focus:-moz-placeholder,
+.modal-content textarea:focus:-moz-placeholder {
+    color: transparent;
+}
+
+.modal-content input:focus:-ms-input-placeholder,
+.modal-content textarea:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+.modal-content input::-webkit-input-placeholder {
+    color: #999999;
+    font-weight: 400;
+}
+
+.modal-content textarea::-webkit-input-placeholder {
+    color: #999999;
+    font-weight: 400;
+}
+
+.modal-content input::-moz-placeholder {
+    color: #999999;
+    font-weight: 400;
+    opacity: 1;
+}
+
+.modal-content textarea::-moz-placeholder {
+    color: #999999;
+    font-weight: 400;
+    opacity: 1;
+}
+
+.modal-content input:-ms-input-placeholder {
+    color: #999999;
+    font-weight: 400;
+}
+
+.modal-content textarea:-ms-input-placeholder {
+    color: #999999;
+    font-weight: 400;
+}
+
+.modal-content textarea {
+    width: 100%;
+    resize: none;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.feedback-form .label-name {
+    position: absolute;
+    display: none;
+    padding-left: 15px;
+    top: -15px;
+    left: 0;
+}
+
+.half-width:first-of-type:focus ~ .label-name {
+    display: block;
+    animation: modal-bounce 0.3s;
+}
+
+.feedback-form .label-mail {
+    position: absolute;
+    display: none;
+    padding-left: 15px;
+    top: 49px;
+    left: 0;
+}
+
+.half-width:nth-of-type(2):focus ~ .label-mail {
+    display: block;
+    animation: modal-bounce 0.3s;
+}
+
+.feedback-form .label-message {
+    position: absolute;
+    display: none;
+    padding-left: 15px;
+    top: 113px;
+    left: 0;
+}
+
+.text-field:focus ~ .label-message {
+    display: block;
+    animation: modal-bounce 0.3s;
+}
+
+.modal-content .feedback-btn {
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+    margin-left: 35px;
+    margin-top: 20px;
+    padding: 9px 17px;
+    background-color: #2aab6d;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: inherit;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+  &:hover {
+    background-color: #1c9b5e;
+    transition: 0.3s;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    transition: 0.3s;
+  }
+}
+
+.modal-content-close {
+    position: absolute;
+    top: -60px;
+    right: -15px;
+    width: 20px;
+    height: 20px;
+    background-color: #f8f7f4;
+    font-size: 0;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+}
+
+.modal-content-close::before,
+.modal-content-close::after {
+    left: 1px;
+    top: 8px;
+    content: "";
+    position: absolute;
+    width: 19px;
+    height: 2px;
+    background-color: #666666;
+    border-radius: 1px;
+}
+
+.modal-content-close::before {
+    transform: rotate(45deg);
+}
+
+.modal-content-close::after {
+    transform: rotate(-45deg);
+}
+
+.modal-content-close:hover {
+    transform: rotate(90deg);
+    transition: 0.3s;
+}
+
+.modal-content-close:hover::before {
+    background: #0d0d0d;
+}
+
+.modal-content-close:hover::after {
+    background: #0d0d0d;
+}
+
+.success-content-close {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    font-size: 0;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+}
+
+.success-content-close::before,
+.success-content-close::after {
+    left: 1px;
+    top: 8px;
+    content: "";
+    position: absolute;
+    width: 19px;
+    height: 2px;
+    background-color: #666666;
+    border-radius: 1px;
+}
+
+.success-content-close::before {
+    transform: rotate(45deg);
+}
+
+.success-content-close::after {
+    transform: rotate(-45deg);
+}
+
+.success-content-close:hover {
+    transform: rotate(90deg) scale(1.3);
+    transition: 0.3s;
+}
+
+.success-content-close:hover::before {
+    background: #0d0d0d;
+}
+
+.success-content-close:hover::after {
+    background: #0d0d0d;
+}
+
+.modal-background {
+    display: none;
+}
+
+.modal-background {
+    position: fixed;
+    margin: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300%;
+    background-color: rgba( 0, 0, 0, 0.7);
+    z-index: 1001;
+}
+
+.modal-background-show {
+    display: block;
+}
+
+@media @tablet-widths {
+  .modal-content {
+
+
+      top:20%;
+  }
+  
+  .success-message {
+
+
+      top: 20%;
+  }
+}

@@ -3,11 +3,14 @@
 @import "../mixin.less";
 
 .page-header {
-	.container();
 	position: fixed;
-	z-index: 1000;
+	z-index: 999;
 	width: 100%;
 	box-shadow: 1px 0 15px 1px #000000;
+}
+
+#page-header {
+	transition: top 0.3s;
 }
 
 .page-header__logo {
@@ -26,12 +29,15 @@
 	text-decoration: none;
 	padding-top: 1%;
 	width: 40%;
+	& img {
+		max-height: 50px;
+		max-width: 120px;
+	}
 }
 
 .main-nav {
-	.container();
 	position: relative;
-	background: rgb(207, 207, 207);
+	background: rgba(207, 207, 207, 0.8);
 	width: 100%;
 	text-align: center;
 }
@@ -52,6 +58,10 @@
 	.font-size(18px, 24px);
 	text-transform: uppercase;
 	font-weight: 700;
+}
+
+.page-header__phone {
+	display: block;
 }
 
 .page-header__phone a {
@@ -118,10 +128,20 @@
 	}
 }
 
+.main-nav--closed .main-nav__toggle::after {
+	content: "Меню";
+	position: absolute;
+	top: 19px;
+	left: 17px;
+	color: #000000;
+	font-size: 14px;
+	width: 20px;
+}
+
 .main-nav--closed .main-nav__toggle::before {
 	content: "";
 	position: absolute;
-	top: 8px;
+	top: 2px;
 	left: 17px;
 
 	width: 36px;
@@ -306,17 +326,43 @@
 	background-repeat: no-repeat;
 }
 
+.main-nav__social-link-inst {
+	position: relative;
+	background: linear-gradient(to bottom, #be00b5, #f6bb41);
+}
+
+.main-nav__social-link-inst::before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 30px;
+	height: 80%;
+	top: 11%;
+	left: 13px;
+	background-image: url("../img/instagram.svg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+@media @tablet-widths {
+	.page-header__logo-link img {
+		max-height: 50px;
+		max-width: 170px;
+	}
+}
+
 @media @desktop-widths {
 
 	.page-header {
 		display: flex;
+		flex-direction: row;
 		position: fixed;
 		min-height: 50px;
 		justify-content: center;
 	}
-
+	
 	.page-header__logo {
-		width: 60%;
+		width: 40%;
 		justify-content: space-between;
 		border-right: 2px solid #ffffff;
 	}
@@ -325,6 +371,14 @@
 		position: static;
 		width: 45%;
 	}
+
+	.main-nav__item-active .main-nav__item-ussual-link {
+		display: none;
+	}
+
+	.page-header__phone {
+	width: 50%;
+}
 
 	.page-header__phone a {
 		padding-left: 1%;
@@ -382,10 +436,6 @@
 		font-weight: bold;
 	}
 	
-	.main-nav__item-active {
-		display: none;
-	}
-
 	.main-nav__item:hover::before {
 		content: "";
 		position: absolute;
